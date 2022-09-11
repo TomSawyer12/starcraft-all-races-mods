@@ -247,7 +247,7 @@
         <LateralAcceleration value="64"/>
         <TurningRate value="360"/>
         <Sight value="11"/>
-        <Food value="-6"/>
+        <Food value="-5"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="300"/>
         <CostResource index="Vespene" value="200"/>
@@ -316,12 +316,12 @@
         <Collide index="Locust" value="1"/>
         <Collide index="Small" value="1"/>
         <Attributes index="Mechanical" value="1"/>
-        <LifeStart value="125"/>
-        <LifeMax value="125"/>
+        <LifeStart value="100"/>
+        <LifeMax value="100"/>
         <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/UEDArmor"/>
         <LifeArmorTip value="Unit/LifeArmorName/UEDArmor"/>
-        <Speed value="3.1718"/>
+        <Speed value="3.1015"/>
         <Acceleration value="6"/>
         <LateralAcceleration value="46"/>
         <StationaryTurningRate value="1499.9414"/>
@@ -490,9 +490,9 @@
         <AbilArray Link="stop"/>
         <AbilArray Link="moveUED"/>
         <AbilArray Link="attackUED"/>
-        <AbilArray Link="UEDTossGrenade"/>
         <AbilArray Link="OnwardComrades"/>
         <AbilArray Link="OpticalFlare"/>
+        <AbilArray Link="UEDTossGrenade"/>
         <BehaviorArray Link="UnitDeathPrevention"/>
         <WeaponArray Link="Type769BattleRifle2"/>
         <WeaponArray Link="DrakkarType769BattleRifle22"/>
@@ -503,8 +503,8 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="AttackGhost" Type="AbilCmd" AbilCmd="attackUED,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="OnwardComrades" Type="AbilCmd" AbilCmd="OnwardComrades,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="StrikeGrenade" Type="AbilCmd" AbilCmd="UEDTossGrenade,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="OpticalFlare" Type="AbilCmd" AbilCmd="OpticalFlare,Execute" Row="2" Column="1"/>
+            <LayoutButtons Face="StrikeGrenade" Type="AbilCmd" AbilCmd="UEDTossGrenade,Execute" Row="2" Column="2"/>
         </CardLayouts>
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
@@ -633,7 +633,7 @@
         <LifeStart value="45"/>
         <LifeMax value="45"/>
         <LifeArmorName value="Unit/LifeArmorName/UEDArmorBio"/>
-        <Speed value="3.6015"/>
+        <Speed value="2.6015"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="46.0625"/>
         <StationaryTurningRate value="999.8437"/>
@@ -781,9 +781,8 @@
         <Collide index="Flying6" value="1"/>
         <Attributes index="Armored" value="1"/>
         <Attributes index="Mechanical" value="1"/>
-        <Attributes index="Massive" value="1"/>
-        <LifeStart value="250"/>
-        <LifeMax value="250"/>
+        <LifeStart value="200"/>
+        <LifeMax value="200"/>
         <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/UEDArmor"/>
         <Speed value="1.8203"/>
@@ -791,10 +790,10 @@
         <LateralAcceleration value="46.0625"/>
         <TurningRate value="360"/>
         <Sight value="11"/>
-        <Food value="-6"/>
+        <Food value="-4"/>
         <CostCategory value="Army"/>
-        <CostResource index="Minerals" value="250"/>
-        <CostResource index="Vespene" value="250"/>
+        <CostResource index="Minerals" value="200"/>
+        <CostResource index="Vespene" value="150"/>
         <RepairTime value="70"/>
         <AttackTargetPriority value="20"/>
         <AbilArray Link="stop"/>
@@ -808,8 +807,9 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="PrecisionStrike" Type="AbilCmd" AbilCmd="PeenemundeMRLSLM,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attackUED,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="PeenemundeMRLSLM,Cancel" Row="2" Column="4"/>
         </CardLayouts>
-        <Radius value="1.1875"/>
+        <Radius value="1"/>
         <SeparationRadius value="0.625"/>
         <InnerRadius value="1"/>
         <ScoreMake value="225"/>
@@ -826,7 +826,7 @@
         <HotkeyCategory value="Unit/Category/UEDUnits"/>
         <TauntDuration index="Dance" value="5"/>
         <GlossaryCategory value="Unit/Category/UEDUnits"/>
-        <CargoSize value="8"/>
+        <CargoSize value="4"/>
     </CUnit>
     <CUnit id="PeenemundeMRLSWeapon" parent="MISSILE">
         <Race value="UED"/>
@@ -861,15 +861,15 @@
         <Attributes index="Light" value="1"/>
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Structure" value="1"/>
-        <LifeStart value="75"/>
-        <LifeMax value="75"/>
+        <LifeStart value="125"/>
+        <LifeMax value="125"/>
         <LifeArmorName value="Unit/LifeArmorName/UEDArmor"/>
         <StationaryTurningRate value="719.4726"/>
         <TurningRate value="719.4726"/>
         <Sight value="8"/>
         <CostCategory value="Economy"/>
-        <CostResource index="Minerals" value="50"/>
-        <CostResource index="Vespene" value="50"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Vespene" value="125"/>
         <RepairTime value="30"/>
         <AttackTargetPriority value="11"/>
         <AbilArray Link="BuildInProgress"/>
@@ -892,7 +892,7 @@
         <GlossaryPriority value="248"/>
         <HotkeyCategory value="Unit/Category/UEDUnits"/>
         <EnergyRegenRate value="0.5625"/>
-        <CargoSize value="2"/>
+        <CargoSize value="4"/>
         <PlacementFootprint value="FootprintNoBuild1x1"/>
     </CUnit>
     <CUnit id="HonorguardCruiser">
@@ -1066,7 +1066,7 @@
         <Food value="-2"/>
         <CostCategory value="Army"/>
         <CostResource index="Minerals" value="75"/>
-        <CostResource index="Vespene" value="50"/>
+        <CostResource index="Vespene" value="25"/>
         <RepairTime value="20"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
@@ -1237,8 +1237,8 @@
         <VisionHeight value="4"/>
         <Food value="-2"/>
         <CostCategory value="Army"/>
-        <CostResource index="Minerals" value="100"/>
-        <CostResource index="Vespene" value="25"/>
+        <CostResource index="Minerals" value="125"/>
+        <CostResource index="Vespene" value="50"/>
         <RepairTime value="41.6667"/>
         <AttackTargetPriority value="20"/>
         <DamageDealtXP value="1"/>
@@ -1608,9 +1608,6 @@
             <LayoutButtons Face="AuthorizeSalvoFiringPatterns" Type="AbilCmd" AbilCmd="ArmoryResearch2,Research4" Row="0" Column="0"/>
             <LayoutButtons Face="EngineSurchargeProtocols" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research2" Row="0" Column="1"/>
             <LayoutButtons Face="AuthorizeTandemReactiveArmor" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research9" Row="0" Column="2"/>
-            <LayoutButtons Face="UEDVehicalsLevel1" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research4" Row="0" Column="4"/>
-            <LayoutButtons Face="UEDVehicalsLevel2" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research5" Row="0" Column="4"/>
-            <LayoutButtons Face="UEDVehicalsLevel3" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research6" Row="0" Column="4"/>
         </CardLayouts>
         <Radius value="2.25"/>
         <SeparationRadius value="1.5"/>
@@ -1824,10 +1821,13 @@
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="AuthorizeFieldReloadingProtocols" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research1" Row="0" Column="1"/>
             <LayoutButtons Face="DroneRepairModule" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research3" Row="0" Column="0"/>
-            <LayoutButtons Face="UnknownButton" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research6" Row="0" Column="4"/>
-            <LayoutButtons Face="UnknownButton2" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research8" Row="0" Column="4"/>
-            <LayoutButtons Face="UnknownButton22" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research9" Row="0" Column="4"/>
+            <LayoutButtons Face="UEDVehicalsLevel1" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research4" Row="0" Column="4"/>
+            <LayoutButtons Face="UEDVehicalsLevel2" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research5" Row="0" Column="4"/>
+            <LayoutButtons Face="UEDVehicalsLevel3" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research6" Row="0" Column="4"/>
             <LayoutButtons Face="ButtonUpgradePhosphoricFire" Type="AbilCmd" AbilCmd="MilitaryResearchStationResearch,Research10" Row="0" Column="2"/>
+            <LayoutButtons Face="UnknownButton" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research6" Row="1" Column="4"/>
+            <LayoutButtons Face="UnknownButton2" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research8" Row="1" Column="4"/>
+            <LayoutButtons Face="UnknownButton22" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research9" Row="1" Column="4"/>
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>
@@ -1962,6 +1962,9 @@
             <LayoutButtons Face="UEDWeaponsLevel3" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research5" Row="0" Column="4"/>
             <LayoutButtons Face="AuthorizeTowerMining" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research13" Row="1" Column="0"/>
             <LayoutButtons Face="ButtonUpgraideHurrakan" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research15" Row="1" Column="1"/>
+            <LayoutButtons Face="ButtonUEDResearchLightArmory" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research16" Row="1" Column="4"/>
+            <LayoutButtons Face="ButtonUEDResearchLightArmory2" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research17" Row="1" Column="4"/>
+            <LayoutButtons Face="ButtonUEDResearchLightArmory3" Type="AbilCmd" AbilCmd="TacticsAcademyResearch,Research18" Row="1" Column="4"/>
         </CardLayouts>
         <Radius value="1.25"/>
         <SeparationRadius value="1.25"/>

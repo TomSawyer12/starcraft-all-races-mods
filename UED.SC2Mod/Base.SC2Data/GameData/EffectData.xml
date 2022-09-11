@@ -157,11 +157,9 @@
     </CEffectApplyBehavior>
     <CEffectCreatePersistent id="EffectPeriodHelpAnimacionPenemunde">
         <EditorCategories value="Race:UED"/>
-        <WhichLocation Value="TargetUnitOrPoint"/>
-        <InitialEffect value="ApplyAlgoritmTargetPenemunde"/>
-        <FinalEffect value="CancelPenemundeAbility"/>
-        <PeriodCount value="30"/>
-        <PeriodicValidator value="ValidatePenemundeAplyAbility"/>
+        <Flags index="Channeled" value="1"/>
+        <ExpireEffect value="SetLauncMissilePenemunde"/>
+        <PeriodCount value="21"/>
         <PeriodicPeriodArray value="0.1"/>
     </CEffectCreatePersistent>
     <CEffectCreatePersistent id="EffectPeriodHightRegeneration">
@@ -183,6 +181,12 @@
         <EditorCategories value="Race:UED"/>
         <BehaviorLink value="PenemundeAlgoritmTargetAbility"/>
     </CEffectRemoveBehavior>
+    <CEffectDamage id="KillPointTargetUED">
+        <EditorCategories value="Race:UED"/>
+        <ImpactLocation Value="TargetOuterUnitOrPoint"/>
+        <Flags index="Kill" value="1"/>
+        <Death value="Remove"/>
+    </CEffectDamage>
     <CEffectRemoveBehavior id="MinusSlowingStrikeGranade">
         <ValidatorArray index="0" removed="1"/>
         <EditorCategories value="Race:UED"/>
@@ -198,8 +202,8 @@
     <CEffectDamage id="PenemundeDamageSmallFrandly">
         <ValidatorArray value="TargetIsAllyorPlayer"/>
         <EditorCategories value="Race:UED"/>
-        <AttributeBonus index="Structure" value="0.75"/>
-        <Amount value="1.5"/>
+        <AttributeBonus index="Structure" value="0.625"/>
+        <Amount value="1.25"/>
     </CEffectDamage>
     <CEffectEnumArea id="SearchAreaHightRegeneration">
         <ValidatorArray value="NotHiddenSelf"/>
@@ -276,7 +280,6 @@
     <CEffectSet id="SetPenemunde">
         <EditorCategories value="Race:UED"/>
         <EffectArray value="PeenemundeMRLS_Damage"/>
-        <EffectArray value="EffektPeriodPenemundeDamagePeriod"/>
         <TargetLocationType value="UnitOrPoint"/>
     </CEffectSet>
     <CEffectSet id="SetGranateDamage">
@@ -288,13 +291,13 @@
     <CEffectDamage id="PenemundeDamageSmallEnemy">
         <ValidatorArray value="TargetIsEnemyOrNeutral"/>
         <EditorCategories value="Race:UED"/>
-        <AttributeBonus index="Structure" value="1.5"/>
-        <Amount value="3"/>
+        <AttributeBonus index="Structure" value="1.25"/>
+        <Amount value="2.5"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="EffektPeriodPenemundeDamagePeriod">
         <EditorCategories value="Race:UED"/>
         <WhichLocation Value="TargetOuterPoint"/>
-        <PeriodCount value="39"/>
+        <PeriodCount value="23"/>
         <PeriodicEffectArray value="SearchAreaDamagePenemunde"/>
         <PeriodicPeriodArray value="0.35"/>
     </CEffectCreatePersistent>
@@ -329,8 +332,8 @@
     </CEffectApplyBehavior>
     <CEffectEnumArea id="SearchAreaDamagePenemunde">
         <EditorCategories value="Race:UED"/>
-        <SearchFilters value="Ground;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <AreaArray Radius="2" Effect="ApplyAlgotitmDamagePenemunde"/>
+        <SearchFilters value="Ground;Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <AreaArray Radius="1.5" Effect="ApplyAlgotitmDamagePenemunde"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SearchAreaStrikeGrenate">
         <EditorCategories value="Race:UED"/>
@@ -352,7 +355,7 @@
         <ValidatorArray value="ValidateCountDruseMaks"/>
         <EditorCategories value="Race:UED"/>
         <SearchFilters value="HarvestableResource;Player,Ally,Enemy"/>
-        <AreaArray Radius="4.5" Effect="EffektPeriodConnektVSTowerMining"/>
+        <AreaArray Radius="9" Effect="EffektPeriodConnektVSTowerMining"/>
         <MaxCount value="1"/>
     </CEffectEnumArea>
     <CEffectEnumArea id="SearchAreaBMIrradiation">
@@ -703,7 +706,7 @@
         <EffectArray value="FirebatACCP"/>
         <EffectArray value="FlameThrowerDamageSet2"/>
     </CEffectSet>
-    <CEffectDamage id="FirebatUFull" parent="DU_WEAP_SPLASH">
+    <CEffectDamage id="FirebatUFullUED" parent="DU_WEAP_SPLASH">
         <ValidatorArray value="noMarkers"/>
         <EditorCategories value="Race:UED"/>
         <AttributeBonus index="Light" value="8"/>
@@ -733,7 +736,7 @@
     <CEffectSet id="FlameThrowerDamageSet">
         <ValidatorArray value="WeaponInRange"/>
         <EditorCategories value="Race:UED"/>
-        <EffectArray value="FirebatUFull"/>
+        <EffectArray value="FirebatUFullUED"/>
         <EffectArray value="FlameThrowerApplyDoTBehavior"/>
     </CEffectSet>
     <CEffectSet id="FlameThrowerDamageSet2">
@@ -852,7 +855,7 @@
         <EditorCategories value="Race:UED"/>
         <LaunchLocation Value="TargetPoint"/>
         <ImpactLocation Value="TargetPoint"/>
-        <SearchFilters value="-;Structure,Stasis,Hidden,Invulnerable"/>
+        <SearchFilters value="-;Player,Ally,Structure,Stasis,Hidden,Invulnerable"/>
         <AreaArray Radius="2" Effect="EMPSet2"/>
     </CEffectEnumArea>
     <CEffectSet id="EMPSet2">
@@ -1117,10 +1120,10 @@
         <EditorCategories value="Race:UED"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Structure" value="40"/>
+        <AttributeBonus index="Structure" value="25"/>
         <Kind value="Ranged"/>
-        <Amount value="80"/>
-        <AreaArray Radius="2" Fraction="0.25"/>
+        <Amount value="50"/>
+        <AreaArray Radius="1.5" Fraction="1"/>
         <SearchFilters value="Ground;RawResource,HarvestableResource,Missile,Stasis,Dead,Hidden"/>
         <ExcludeArray Value="Target"/>
     </CEffectDamage>
@@ -1193,7 +1196,6 @@
         <EditorCategories value="Race:UED"/>
         <Amount value="8"/>
         <Death value="Fire"/>
-        <AttributeBonus index="Armored" value="3"/>
     </CEffectDamage>
     <CEffectSet id="BattlecruiserDamageSet2">
         <EditorCategories value="Race:UED"/>
@@ -1468,7 +1470,8 @@
         <KindSplash value="Splash"/>
         <Amount value="8"/>
         <Death value="Blast"/>
-        <AreaArray Radius="1.25" Fraction="0.5"/>
+        <AreaArray Radius="0.75" Fraction="0.5"/>
+        <AreaArray Radius="1.25" Fraction="0.35"/>
         <ExcludeArray Value="Target"/>
         <SearchFilters value="Ground;Air,RawResource,HarvestableResource,Missile,Stasis,Dead,Hidden,Invulnerable"/>
     </CEffectDamage>
@@ -1582,11 +1585,11 @@
         <EditorCategories value="Race:UED"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <AttributeBonus index="Armored" value="6"/>
+        <AttributeBonus index="Armored" value="5"/>
         <ArmorReduction value="1"/>
         <Flags index="Notification" value="1"/>
         <Kind value="Ranged"/>
-        <Amount value="8"/>
+        <Amount value="7"/>
         <SearchFlags index="CallForHelp" value="1"/>
         <SearchFlags index="OffsetByUnitRadius" value="1"/>
     </CEffectDamage>
@@ -1601,7 +1604,7 @@
         <AttributeBonus index="Armored" value="4"/>
         <ArmorReduction value="1"/>
         <Kind value="Splash"/>
-        <Amount value="6"/>
+        <Amount value="5"/>
     </CEffectDamage>
     <CEffectEnumArea id="TaranisScreecherMissilesCarpetBombSearchArea">
         <ValidatorArray value="ClusterWarheadsPurchased"/>
@@ -1640,7 +1643,7 @@
     <CEffectApplyBehavior id="BurrowChargeCasterApplyBehavior">
         <EditorCategories value="Race:UED"/>
         <WhichUnit Value="Caster"/>
-        <Behavior value="BurrowCharging"/>
+        <Behavior value="BurrowChargingUED"/>
     </CEffectApplyBehavior>
     <CEffectSet id="BurrowChargeImpactSet">
         <EditorCategories value="Race:UED"/>
@@ -1681,7 +1684,7 @@
     <CEffectRemoveBehavior id="BurrowChargeRemoveCasterBehavior">
         <EditorCategories value="Race:UED"/>
         <WhichUnit Value="Caster"/>
-        <BehaviorLink value="BurrowCharging"/>
+        <BehaviorLink value="BurrowChargingUED"/>
     </CEffectRemoveBehavior>
     <CEffectCreatePersistent id="BurrowChargeStructure">
         <EditorCategories value="Race:UED"/>

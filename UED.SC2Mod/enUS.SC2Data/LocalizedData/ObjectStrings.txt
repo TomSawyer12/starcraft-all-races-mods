@@ -1,4 +1,5 @@
-﻿Abil/EditorPrefix/ArmoryResearch2=Armory -
+﻿Abil/EditorPrefix/AbilityHightRegeneration=Башня восстановления - 
+Abil/EditorPrefix/ArmoryResearch2=Armory -
 Abil/EditorPrefix/ArmoryResearch22=Armory -
 Abil/EditorPrefix/BeaconBuild=Beacon -
 Abil/EditorPrefix/CalldownBeacon=(Dummy)
@@ -37,6 +38,7 @@ Abil/EditorPrefix/UpgradeToHeavyTower=Arsenal -
 Abil/EditorPrefix/UpgradeToInfusionTower=Arsenal -
 Abil/EditorPrefix/UpgradeToMissileTower=Arsenal -
 Abil/EditorPrefix/UpgradeToSuppressionTower=Arsenal -
+Abil/EditorSuffix/AbilityHightRegeneration=
 Abil/EditorSuffix/CalldownBeacon=
 Abil/EditorSuffix/attackUED=
 Abil/EditorSuffix/moveUED=

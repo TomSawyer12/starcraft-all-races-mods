@@ -81,26 +81,40 @@
         <OperandArray value="CountUnitTeleportationNodeCompleteOnly2813629442TechTreeCheat"/>
         <OperandArray value="GT28408138542CountBehaviorAlgoritmKolichestvoTowerMiningInProgressOrBetterAtUnit"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeUEDArmorLevel1CompleteOnly1">
-        <OperandArray value="EqCountUpgradeUEDArmorLevel1CompleteOnly1"/>
+    <CRequirementAnd id="AndCountUpgradeUEDArmorLevel1CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDArmorLevel1CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeUEDArmorLevel2CompleteOnly1">
-        <OperandArray value="EqCountUpgradeUEDArmorLevel2CompleteOnly1"/>
+    <CRequirementAnd id="AndCountUpgradeUEDArmorLevel2CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDArmorLevel2CompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeUEDVehicalsLevel1CompleteOnly1CountUnitMilitaryResearchStationCompleteOnly">
-        <OperandArray value="EqCountUpgradeUEDVehicalsLevel1CompleteOnly1"/>
-        <OperandArray value="CountUnitMilitaryResearchStationCompleteOnly"/>
-    </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeUEDVehicalsLevel2CompleteOnly1CountUnitMilitaryResearchStationCompleteOnly">
-        <OperandArray value="EqCountUpgradeUEDVehicalsLevel2CompleteOnly1"/>
-        <OperandArray value="CountUnitMilitaryResearchStationCompleteOnly"/>
-    </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeUEDWeaponsLevel1CompleteOnly1CountUnitFieldBureauCompleteOnly">
-        <OperandArray value="EqCountUpgradeUEDWeaponsLevel1CompleteOnly1"/>
+    <CRequirementAnd id="AndCountUpgradeUEDArmorLightLevel1CompleteOnlyCountUnitFieldBureauCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDArmorLightLevel1CompleteOnly"/>
         <OperandArray value="CountUnitFieldBureauCompleteOnly"/>
     </CRequirementAnd>
-    <CRequirementAnd id="AndEqCountUpgradeUEDWeaponsLevel2CompleteOnly1CountUnitFieldBureauCompleteOnly">
-        <OperandArray value="EqCountUpgradeUEDWeaponsLevel2CompleteOnly1"/>
+    <CRequirementAnd id="AndCountUpgradeUEDArmorLightLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDArmorLightLevel2CompleteOnly"/>
+        <OperandArray value="CountUnitFieldBureauCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeUEDVehicalsLevel1CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDVehicalsLevel1CompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeUEDVehicalsLevel2CompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDVehicalsLevel2CompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeUEDWeaponsLevel1CompleteOnlyCountUnitFieldBureauCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDWeaponsLevel1CompleteOnly"/>
+        <OperandArray value="CountUnitFieldBureauCompleteOnly"/>
+    </CRequirementAnd>
+    <CRequirementAnd id="AndCountUpgradeUEDWeaponsLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray value="CountUpgradeUEDWeaponsLevel2CompleteOnly"/>
         <OperandArray value="CountUnitFieldBureauCompleteOnly"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndNotCountUpgradeUpgradeLazarusRegenHealfQueuedOrBetter">
@@ -110,7 +124,6 @@
         <OperandArray value="NotCountUpgradeUpgradePhosphoricFireQueuedOrBetter"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndNotCountUpgradeUpgradeSpeedHurakanQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray value="NotCountUpgradeUpgradeSpeedHurakanQueuedOrBetter"/>
     </CRequirementAnd>
     <CRequirementAnd id="AndNotCountUpgradeUpgradeTowerMiningQueuedOrBetter">
@@ -180,10 +193,6 @@
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitInfusionTowerCompleteOnlyTechTreeCheat">
         <Count Link="InfusionTower" State="CompleteOnly"/>
-    </CRequirementCountUnit>
-    <CRequirementCountUnit id="CountUnitMilitaryResearchStationCompleteOnly">
-        <Flags index="TechTreeCheat" value="0"/>
-        <Count Link="MilitaryResearchStation" State="CompleteOnly"/>
     </CRequirementCountUnit>
     <CRequirementCountUnit id="CountUnitMilitaryResearchStationCompleteOnly1297919308TechTreeCheat">
         <Count Link="MilitaryResearchStation" State="CompleteOnly"/>
@@ -323,6 +332,31 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UEDArmorLevel3" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUEDArmorLightLevel1CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UEDArmorLightLevel1" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUEDArmorLightLevel1QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UEDArmorLightLevel1" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUEDArmorLightLevel2CompleteOnly">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UEDArmorLightLevel2" State="CompleteOnly"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUEDArmorLightLevel2QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UEDArmorLightLevel2" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
+    <CRequirementCountUpgrade id="CountUpgradeUEDArmorLightLevel3QueuedOrBetter">
+        <Flags index="TechTreeCheat" value="0"/>
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <Count Link="UEDArmorLightLevel3" State="QueuedOrBetter"/>
+    </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUEDCommanderCompleteOnly">
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UEDCommander" State="CompleteOnly"/>
@@ -411,7 +445,6 @@
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUpgradeSpeedHurakanQueuedOrBetter">
         <Flags index="TechTreeCheat" value="0"/>
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <Count Link="UpgradeSpeedHurakan" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
     <CRequirementCountUpgrade id="CountUpgradeUpgradeTowerMiningCompleteOnly749832984TechTreeCheat">
@@ -428,17 +461,9 @@
         <Flags index="TechTreeCheat" value="0"/>
         <Count Link="UpgraideDrakkar" State="QueuedOrBetter"/>
     </CRequirementCountUpgrade>
-    <CRequirementEq id="EqCountUpgradeUEDArmorLevel1CompleteOnly1">
-        <OperandArray index="0" value="CountUpgradeUEDArmorLevel1CompleteOnly"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeUEDArmorLevel1QueuedOrBetter0">
         <OperandArray index="0" value="CountUpgradeUEDArmorLevel1QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeUEDArmorLevel2CompleteOnly1">
-        <OperandArray index="0" value="CountUpgradeUEDArmorLevel2CompleteOnly"/>
-        <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeUEDArmorLevel2QueuedOrBetter0">
         <OperandArray index="0" value="CountUpgradeUEDArmorLevel2QueuedOrBetter"/>
@@ -448,17 +473,24 @@
         <OperandArray index="0" value="CountUpgradeUEDArmorLevel3QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeUEDVehicalsLevel1CompleteOnly1">
-        <OperandArray index="0" value="CountUpgradeUEDVehicalsLevel1CompleteOnly"/>
-        <OperandArray index="1" value="1"/>
+    <CRequirementEq id="EqCountUpgradeUEDArmorLightLevel1QueuedOrBetter0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUEDArmorLightLevel1QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeUEDArmorLightLevel2QueuedOrBetter0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUEDArmorLightLevel2QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
+    </CRequirementEq>
+    <CRequirementEq id="EqCountUpgradeUEDArmorLightLevel3QueuedOrBetter0">
+        <Tooltip value="RequirementNode/Tooltip/##id##"/>
+        <OperandArray index="0" value="CountUpgradeUEDArmorLightLevel3QueuedOrBetter"/>
+        <OperandArray index="1" value="0"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeUEDVehicalsLevel1QueuedOrBetter0">
         <OperandArray index="0" value="CountUpgradeUEDVehicalsLevel1QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeUEDVehicalsLevel2CompleteOnly1">
-        <OperandArray index="0" value="CountUpgradeUEDVehicalsLevel2CompleteOnly"/>
-        <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeUEDVehicalsLevel2QueuedOrBetter0">
         <OperandArray index="0" value="CountUpgradeUEDVehicalsLevel2QueuedOrBetter"/>
@@ -468,17 +500,9 @@
         <OperandArray index="0" value="CountUpgradeUEDVehicalsLevel3QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
     </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeUEDWeaponsLevel1CompleteOnly1">
-        <OperandArray index="0" value="CountUpgradeUEDWeaponsLevel1CompleteOnly"/>
-        <OperandArray index="1" value="1"/>
-    </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeUEDWeaponsLevel1QueuedOrBetter0">
         <OperandArray index="0" value="CountUpgradeUEDWeaponsLevel1QueuedOrBetter"/>
         <OperandArray index="1" value="0"/>
-    </CRequirementEq>
-    <CRequirementEq id="EqCountUpgradeUEDWeaponsLevel2CompleteOnly1">
-        <OperandArray index="0" value="CountUpgradeUEDWeaponsLevel2CompleteOnly"/>
-        <OperandArray index="1" value="1"/>
     </CRequirementEq>
     <CRequirementEq id="EqCountUpgradeUEDWeaponsLevel2QueuedOrBetter0">
         <OperandArray index="0" value="CountUpgradeUEDWeaponsLevel2QueuedOrBetter"/>
@@ -547,7 +571,6 @@
         <OperandArray index="0" value="CountUpgradeUpgradePhosphoricFireQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUpgradeSpeedHurakanQueuedOrBetter">
-        <Tooltip value="RequirementNode/Tooltip/##id##"/>
         <OperandArray index="0" value="CountUpgradeUpgradeSpeedHurakanQueuedOrBetter"/>
     </CRequirementNot>
     <CRequirementNot id="NotCountUpgradeUpgradeTowerMiningQueuedOrBetter">

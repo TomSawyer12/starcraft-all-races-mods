@@ -98,7 +98,7 @@
     <CWeaponLegacy id="Huracan">
         <EditorCategories value="Race:UED"/>
         <Icon value="Assets\weapon-tank-icon-upgrade-0.dds"/>
-        <DisplayEffect value="UEDFireUFull"/>
+        <DisplayEffect value="FirebatUFullUED"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="5.5"/>
         <Range value="1.5"/>

@@ -49,6 +49,18 @@
         <TintRacially value="1"/>
         <HotkeyAlias value="CloakingDrone"/>
     </CButton>
+    <CButton id="ButtonUEDResearchLightArmory2">
+        <Icon value="Assets\btn-upgrade-ued-armor-level2.dds"/>
+        <AlertIcon value="Assets\btn-upgrade-ued-armor-level2.dds"/>
+        <EditorCategories value="Race:UED"/>
+        <HotkeyAlias value="UnknownButton"/>
+    </CButton>
+    <CButton id="ButtonUEDResearchLightArmory3">
+        <Icon value="Assets\btn-upgrade-ued-armor-level3.dds"/>
+        <AlertIcon value="Assets\btn-upgrade-ued-armor-level3.dds"/>
+        <EditorCategories value="Race:UED"/>
+        <HotkeyAlias value="UnknownButton"/>
+    </CButton>
     <CButton id="ButtonUpgraideDrakkar">
         <Icon value="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds"/>
         <EditorCategories value="Race:UED"/>
@@ -623,6 +635,12 @@
         <Icon value="Assets\Textures\btn-tips-richminerals.dds"/>
         <AlertIcon value="Assets\Textures\btn-tips-richminerals.dds"/>
         <EditorCategories value="Race:UED"/>
+    </CButton>
+    <CButton id="ButtonUEDResearchLightArmory">
+        <Icon value="Assets\btn-upgrade-ued-armor-level1.dds"/>
+        <AlertIcon value="Assets\btn-upgrade-ued-armor-level1.dds"/>
+        <EditorCategories value="Race:UED"/>
+        <HotkeyAlias value="UnknownButton"/>
     </CButton>
     <CButton id="VespenePurificationPlant">
         <Icon value="Assets\Buttons\Structures\btn-structure-UED-RefineryAutomated.dds"/>

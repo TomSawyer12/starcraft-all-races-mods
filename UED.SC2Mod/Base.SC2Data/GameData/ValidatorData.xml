@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorUnitType id="ValidateLazarusUED">
+        <Value value="Lazarus"/>
+    </CValidatorUnitType>
+    <CValidatorCombine id="ValidateLifeLazarusUED">
+        <Type value="And"/>
+        <CombineArray value="ValidateNoDie"/>
+        <CombineArray value="ValidateLazarusUED"/>
+    </CValidatorCombine>
+    <CValidatorLocationEnumArea id="ValidateLazarusNearUED">
+        <AreaArray>
+            <Compare value="GE"/>
+            <Count value="1"/>
+            <Radius value="13"/>
+            <Validator value="ValidateLifeLazarusUED"/>
+        </AreaArray>
+        <SearchFlags index="OffsetAreaByAngle" value="0"/>
+        <SearchFilters value="-;Self,Neutral,Enemy,Missile,Dead"/>
+    </CValidatorLocationEnumArea>
     <CValidatorCombine id="ValidatePointUED">
         <CombineArray value="ValidateAnyTargetUED"/>
         <Negate value="1"/>
@@ -87,7 +105,7 @@
     <CValidatorUnitCompareBehaviorCount id="ValidateCountDruseMaks">
         <WhichUnit Value="Caster"/>
         <Compare value="LT"/>
-        <Value value="4"/>
+        <Value value="8"/>
         <Behavior value="AlgoritmKolichestvoDruse"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitCompareBehaviorCount id="ValidateNoFieldBeatan">

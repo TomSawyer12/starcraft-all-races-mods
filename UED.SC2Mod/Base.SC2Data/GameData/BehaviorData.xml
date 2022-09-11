@@ -66,6 +66,17 @@
         <EditorCategories value="Race:UED,AbilityorEffectType:Units"/>
         <Duration value="0.8"/>
     </CBehaviorBuff>
+    <CBehaviorBuff id="BurrowChargingUED">
+        <InfoFlags index="Hidden" value="1"/>
+        <EditorCategories value="Race:UED,AbilityorEffectType:Units"/>
+        <Modification MoveSpeedBonus="1.5">
+            <ModifyFlags index="OrdersUninterruptible" value="1"/>
+            <StateFlags index="Bury" value="1"/>
+            <StateFlags index="Cloak" value="1"/>
+            <StateFlags index="SuppressCollision" value="1"/>
+            <WeaponDisableArray value="KaiserBlades"/>
+        </Modification>
+    </CBehaviorBuff>
     <CBehaviorBuff id="BurrowChargingRevD2">
         <InfoFlags index="Hidden" value="1"/>
         <EditorCategories value="Race:UED,AbilityorEffectType:Units"/>
@@ -175,7 +186,7 @@
         <InfoIcon value="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:UED"/>
         <MaxStackCount value="4"/>
-        <Modification MoveSpeedBonus="-0.125" AccelerationBonus="-0.875" DecelerationBonus="-0.875"/>
+        <Modification MoveSpeedBonus="-0.1445" AccelerationBonus="-0.875" DecelerationBonus="-0.875"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="DrakkarAlgoritmOtklAttack">
         <InfoIcon value="Assets\Textures\btn-ability-mengsk-battlecruiser-decksights.dds"/>
@@ -210,6 +221,7 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:UED"/>
         <RemoveValidatorArray value="ValidateLazarusRegenHealf"/>
         <Duration value="7"/>
+        <InfoFlags index="Hidden" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="AlgoritmStrikeGrenade">
         <Alignment value="Negative"/>
@@ -246,7 +258,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Buttons\Structures\btn-structure-UED-SensorTower.dds"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:UED"/>
-        <MaxStackCount value="4"/>
+        <MaxStackCount value="8"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="AlgoritmIrradiationBMField">
         <Alignment value="Negative"/>
@@ -318,6 +330,8 @@
         <RemoveValidatorArray value="IsNotBuried"/>
         <Duration value="3.5"/>
         <Modification>
+            <AbilClassDisableArray index="CAbilProgress" value="1"/>
+            <AbilClassDisableArray index="CAbilArmMagazine" value="1"/>
             <AbilClassDisableArray index="CAbilAugment" value="1"/>
             <AbilClassDisableArray index="CAbilBehavior" value="1"/>
             <AbilClassDisableArray index="CAbilBuild" value="1"/>
@@ -325,6 +339,7 @@
             <AbilClassDisableArray index="CAbilEffectTarget" value="1"/>
             <AbilClassDisableArray index="CAbilMerge" value="1"/>
             <AbilClassDisableArray index="CAbilMorph" value="1"/>
+            <AbilClassDisableArray index="CAbilWarpTrain" value="1"/>
         </Modification>
     </CBehaviorBuff>
     <CBehaviorBuff id="EnrichmentField">
@@ -417,8 +432,10 @@
         <BuffFlags index="RefreshStack" value="1"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UnitDeathPrevention">
-        <InfoFlags index="Hidden" value="1"/>
+        <InfoFlags index="AlwaysUseGameText" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-kerrigan_revive.dds"/>
         <EditorCategories value="Race:UED,AbilityorEffectType:Units"/>
+        <DisableValidatorArray value="ValidateLazarusNearUED"/>
         <DamageResponse Fatal="1" Handled="ApplyIncapBehavior" ModifyFraction="0">
             <Chance value="1"/>
         </DamageResponse>
@@ -468,6 +485,7 @@
             <BehaviorLinkDisableArray value="RaynorRadarDummy"/>
             <BehaviorLinkDisableArray value="OutOfCombatEnergyRegenDummy"/>
         </Modification>
+        <DisableValidatorArray value="ValidateLazarusNearUED"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="StarWind">
         <Alignment value="Positive"/>

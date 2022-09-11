@@ -35,6 +35,7 @@ Abil/EditorPrefix/SwitchHonorguardGuntoLazer2=(Dummy)
 Abil/EditorPrefix/TacticsAcademyResearch=Tactics Academy -
 Abil/EditorPrefix/TeleportationNodeTrain=Teleportation Node -
 Abil/EditorPrefix/UEDCalldownStructure=OPSCOM -
+Abil/EditorPrefix/UEDTossGrenade=Political Advisor -
 Abil/EditorPrefix/UpgradeToHeavyTower=Arsenal -
 Abil/EditorPrefix/UpgradeToInfusionTower=Arsenal -
 Abil/EditorPrefix/UpgradeToMissileTower=Arsenal -
@@ -126,10 +127,6 @@ Actor/Name/EnrichmentTowerFieldRange=EnrichmentTower Field Range
 Actor/Name/EnrichmentTowerSplat=Enrichment Towerl Splat
 Actor/Name/FieldBureau=Field Bureau
 Actor/Name/FieldBureauSplat=Field Bureau Splat
-Actor/Name/UEDFireAttack=UEDFire Attack
-Actor/Name/UEDFireAttackModel=UEDFire Attack Model
-Actor/Name/UEDFireFoliageFXSpawner=UEDFire Foliage FXSpawner
-Actor/Name/UEDFireTreeKiller=UEDFire Tree Killer
 Actor/Name/FlashGrenadeCursorSplat=Optical Cursor Splat
 Actor/Name/Garmr=Garmr
 Actor/Name/GarmrAttack=Garmr Attack
@@ -276,6 +273,10 @@ Actor/Name/TyphoonAttack=Typhoon Attack
 Actor/Name/UEDCalldownLarge=UED Calldown Large
 Actor/Name/UEDCalldownWithBeaconSounds=UEDCalldownWithBeaconSounds
 Actor/Name/UEDDropPod=UED Drop Pod
+Actor/Name/UEDFireAttack=UEDFire Attack
+Actor/Name/UEDFireAttackModel=UEDFire Attack Model
+Actor/Name/UEDFireFoliageFXSpawner=UEDFire Foliage FXSpawner
+Actor/Name/UEDFireTreeKiller=UEDFire Tree Killer
 Actor/Name/UEDPlacementDummySmall=UED Placement Dummy Small
 Actor/Name/UltraliskBurrowChargeImpact2=Ultralisk Burrow Charge Impact
 Actor/Name/UltraliskBurrowChargeMPCursorSplat2=Ultralisk Burrow Charge MP Cursor Splat
@@ -335,8 +336,10 @@ Behavior/Name/AlgoritmHightRegeneraishonHealf=Повышенная регене�
 Behavior/Name/AlgoritmIrradiationFieldBeatan=Излучение поля беатания
 Behavior/Name/AlgoritmKolichestvoDruse=Количество облученных друз
 Behavior/Name/AlgoritmKolichestvoTowerMining=Башня обогащения
+Behavior/Name/AlgoritmResurrected=Воскресший
 Behavior/Name/BurrowChargeMPKnockback2=Burrow Charge MP Knockback
 Behavior/Name/BurrowChargingRevD2=Burrow Charging Rev D
+Behavior/Name/BurrowChargingUED=Подземный рывок ОЗД
 Behavior/Name/CarryHarvestableVespeneGeyserGas2=Carry Harvestable Vespene Geyser Gas
 Behavior/Name/Detector1122=Up energy recovery
 Behavior/Name/DrakkarAlgoritmSlowing=Замедление с грузом
@@ -350,7 +353,6 @@ Behavior/Name/SupplyDropEnRoute2=Supply Drop En Route
 Behavior/Name/TerranBuildingBurnDown2=Building Burnout
 Behavior/Name/UEDResourses=UEDResourses
 Behavior/Name/UEDheal=UEDheal
-Behavior/Name/UnitDeathPrevention=Unit Death Prevention
 Behavior/Tooltip/AlgoritmCloakingDroneUEDhelp=Эта боевая еденица замаскирована. Если она откроет огонь то маскировка спадет.
 Behavior/Tooltip/AlgoritmDamageOnBuildeng=Бонусный урон по строениям 20 ед.
 Behavior/Tooltip/AlgoritmHightRegeneraishonEnergy=Повышенное восстановление здоровья и энергии.
@@ -358,6 +360,7 @@ Behavior/Tooltip/AlgoritmHightRegeneraishonHealf=Повышенное восст
 Behavior/Tooltip/AlgoritmIrradiationFieldBeatan=Минеральная друза подвергается воздействию беатанического излучения. Рабочий может добывать с нее большее количество минералов.
 Behavior/Tooltip/AlgoritmKolichestvoDruse=Минеральная друза подвергается воздействию беатанического излучения. Рабочий может добывать с нее большее количество минералов.
 Behavior/Tooltip/AlgoritmKolichestvoTowerMining=К этому штабу операций привязаны башни обогащения.
+Behavior/Tooltip/AlgoritmResurrected=Эта единица только недавно воскресла, внутренние резервы еще не восстановлены и повторное воскрешение невозможно.
 Behavior/Tooltip/Detector1122=Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора.
 Behavior/Tooltip/DrakkarAlgoritmSlowing=
 Button/EditorPrefix/AtmosphericOperationsLoadout=Crimson Eye -
@@ -432,6 +435,7 @@ Effect/EditorPrefix/ApplyAlgoritmIrradiationBMField=Башня восстано�
 Effect/EditorPrefix/ApplyAlgoritmKolichestvoDruseTower=Башня обогащения -
 Effect/EditorPrefix/ApplyAlgoritmLazarusRegenHelf=Лазарус - 
 Effect/EditorPrefix/ApplyAlgoritmTargetPenemunde=Пенемюнде -
+Effect/EditorPrefix/ApplyAlgotitmDamagePenemunde=Пенемюнде - 
 Effect/EditorPrefix/ApplyIncapBehavior=valerian02a -
 Effect/EditorPrefix/ApplyIncapStandUpTimer=valerian02a -
 Effect/EditorPrefix/BacklashRockets2=Banshee -
@@ -478,6 +482,7 @@ Effect/EditorPrefix/HighPoweredShot=Strike Trooper -
 Effect/EditorPrefix/IncapDeath=valerian02a -
 Effect/EditorPrefix/InterceptorBeamDamage2=Interceptor -
 Effect/EditorPrefix/InterceptorBeamPersistent2=Carrier - Interceptor -
+Effect/EditorPrefix/KillPointTargetUED=Пенемюнде - 
 Effect/EditorPrefix/KillUnitDrakkar=Драккар - 
 Effect/EditorPrefix/LanzerTorpedoes2=Viking -
 Effect/EditorPrefix/LanzerTorpedoesDamage2=Viking -
@@ -497,6 +502,7 @@ Effect/EditorPrefix/Period123433=Минеральная друза -
 Effect/EditorPrefix/RayPunisher=Salvager -
 Effect/EditorPrefix/ReleaseInterceptors2=Carrier -
 Effect/EditorPrefix/SearchAreaBMIrradiation=Башня восстановления -
+Effect/EditorPrefix/SearchAreaDamagePenemunde=Пенемюнде - 
 Effect/EditorPrefix/SearchAreaGarmrExploed=Гармр - 
 Effect/EditorPrefix/SearchAreaHightRegeneration=Башня восстановления -
 Effect/EditorPrefix/SearchAreaLazarusRegenHelf=Лазарус - 
@@ -506,7 +512,6 @@ Effect/EditorPrefix/SearchTowerMining=Штаб операций -
 Effect/EditorPrefix/SetGarmrExploing=Гармр -
 Effect/EditorPrefix/SetGranateDamage=Ударная граната -
 Effect/EditorPrefix/SetIrradiationPassivField=Башня обогащения -
-Effect/EditorPrefix/SetIrradiationPassivField2=Башня обогащения -
 Effect/EditorPrefix/SetLauncMissilePenemunde=Пенемюнде -
 Effect/EditorPrefix/SetPenemunde=Пенемюнде -
 Effect/EditorPrefix/SetPenemundeFireDamage=Пенемюнде -
@@ -574,7 +579,6 @@ Model/EditorPrefix/BattlecruiserPortrait2=Portrait -
 Model/EditorPrefix/CommandCenterPortrait2=UED
 Model/EditorPrefix/CrimsonEyePortrait=Portrait -
 Model/EditorPrefix/DrakkarAPCPortrait=Portrait -
-Model/EditorPrefix/UEDFirePortrait=Portrait -
 Model/EditorPrefix/GarmrPortrait=Portrait -
 Model/EditorPrefix/LazarusPortrait=Portrait -
 Model/EditorPrefix/MainBattleTankPortrait=Portrait -
@@ -589,6 +593,7 @@ Model/EditorPrefix/StrikefighterPortrait=Portrait -
 Model/EditorPrefix/SupportShuttlePortrait=Portrait -
 Model/EditorPrefix/TransfusionHealTick2=Support Shuttle -
 Model/EditorPrefix/TransportShuttlePortrait=Portrait -
+Model/EditorPrefix/UEDFirePortrait=Portrait -
 Model/Name/ATALaserBatteryLMWeapon2=ATA Laser Battery LMWeapon
 Model/Name/ATSLaserBatteryLMWeapon2=ATS Laser Battery LMWeapon
 Model/Name/AcidSalivaWeapon2=Acid Saliva Weapon
@@ -649,7 +654,6 @@ Model/Name/FieldBureau=Field Bureau
 Model/Name/FieldBureauDeath=Field Bureau Death
 Model/Name/FieldBureauPlacement=Field Bureau Placement
 Model/Name/FieldBureauSplat=Field Bureau Splat
-Model/Name/UEDFirePortrait=Firebat
 Model/Name/Garmr=Garmr
 Model/Name/GarmrDeath=Garmr Death
 Model/Name/GarmrDeathRagdoll=Garmr Death Ragdoll
@@ -850,7 +854,9 @@ Model/Name/TransportShuttle=Transport Shuttle
 Model/Name/TransportShuttleDeath=Transport Shuttle Death
 Model/Name/TransportShuttleDeathRagdoll=Transport Shuttle Death Ragdoll
 Model/Name/TransportShuttlePortrait=Transport Shuttle
+Model/Name/UEDFirePortrait=Firebat
 Model/Name/UEDTTGrenadeImpact=Grenade Impact
+Model/Name/UEDTYGrenade=UEDTYGrenade
 Model/Name/UEDTeleportationNodeBuildEffect=UED Teleportation Node Build Effect
 Model/Name/UEDUnitCreatedEffectLarge=UED Unit Created Effect Large
 Model/Name/UEDUnitCreatedEffectMedium=UED Unit Created Effect Medium
@@ -918,6 +924,9 @@ Requirement/Name/LearnSalvoFiringPattern=Learn Salvo Firing Pattern
 Requirement/Name/LearnSpareRifleBatteries=Learn Spare Rifle Batteries
 Requirement/Name/LearnStrikeGrenade=Learn Strike Grenade
 Requirement/Name/LearnTUEDArmor1=Learn UED Armor1
+Requirement/Name/LearnTUEDLightArmor1=Learn UED LightArmor1
+Requirement/Name/LearnTUEDLightArmor2=Learn UED LightArmor2
+Requirement/Name/LearnTUEDLightArmor3=Learn UED LightArmor3
 Requirement/Name/LearnTandemReactiveArmor=Learn Tandem Reactive Armor
 Requirement/Name/LearnTowerMining=Изучено башня обогащения
 Requirement/Name/LearnUEDArmor2=Learn UED Armor2
@@ -966,13 +975,15 @@ RequirementNode/Name/AndAllowUnitStrikeTrooperNotCountUpgradeSpareRifleBatteries
 RequirementNode/Name/AndAllowUnitStrikefighterNotCountUpgradeAtmosphericOperationsLoadoutQueuedOrBetter=AllowUnit(Strikefighter) && !CountUpgrade(AtmosphericOperationsLoadout,QueuedOrBetter)
 RequirementNode/Name/AndAllowUnitSupportShuttleNotCountUpgradeUpgradeEnergeSupportShutlQueuedOrBetter=AllowUnit(SupportShuttle) && !CountUpgrade(UpgradeEnergeSupportShutl,QueuedOrBetter)
 RequirementNode/Name/AndCountUnitTeleportationNodeCompleteOnly2813629442TechTreeCheatGT28408138542CountBehaviorAlgoritmKolichestvoTowerMiningInProgressOrBetterAtUnit=CountUnit(TeleportationNode,CompleteOnly){Узел телепортации}[TechTreeCheat] && 2 > {Максимум 2 башни обогащения}CountBehavior(AlgoritmKolichestvoTowerMining,InProgressOrBetterAtUnit)
-RequirementNode/Name/AndEqCountUpgradeUEDArmorLevel1CompleteOnly1=CountUpgrade(UEDArmorLevel1,CompleteOnly) == 1 && ()
-RequirementNode/Name/AndEqCountUpgradeUEDArmorLevel2CompleteOnly1=CountUpgrade(UEDArmorLevel2,CompleteOnly) == 1 && ()
-RequirementNode/Name/AndEqCountUpgradeUEDVehicalsLevel1CompleteOnly1CountUnitMilitaryResearchStationCompleteOnly=CountUpgrade(UEDVehicalsLevel1,CompleteOnly) == 1 && CountUnit(MilitaryResearchStation,CompleteOnly)
+RequirementNode/Name/AndCountUpgradeUEDArmorLevel1CompleteOnly=CountUpgrade(UEDArmorLevel1,CompleteOnly) && ()
+RequirementNode/Name/AndCountUpgradeUEDArmorLevel2CompleteOnly=CountUpgrade(UEDArmorLevel2,CompleteOnly) && ()
+RequirementNode/Name/AndCountUpgradeUEDArmorLightLevel1CompleteOnlyCountUnitFieldBureauCompleteOnly=CountUpgrade(UEDArmorLightLevel1,CompleteOnly) && CountUnit(FieldBureau,CompleteOnly)
+RequirementNode/Name/AndCountUpgradeUEDArmorLightLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly=CountUpgrade(UEDArmorLightLevel2,CompleteOnly) && CountUnit(FieldBureau,CompleteOnly)
+RequirementNode/Name/AndCountUpgradeUEDVehicalsLevel1CompleteOnly=CountUpgrade(UEDVehicalsLevel1,CompleteOnly) && ()
+RequirementNode/Name/AndCountUpgradeUEDVehicalsLevel2CompleteOnly=CountUpgrade(UEDVehicalsLevel2,CompleteOnly) && ()
+RequirementNode/Name/AndCountUpgradeUEDWeaponsLevel1CompleteOnlyCountUnitFieldBureauCompleteOnly=CountUpgrade(UEDWeaponsLevel1,CompleteOnly) && CountUnit(FieldBureau,CompleteOnly)
+RequirementNode/Name/AndCountUpgradeUEDWeaponsLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly=CountUpgrade(UEDWeaponsLevel2,CompleteOnly) && CountUnit(FieldBureau,CompleteOnly)
 RequirementNode/Name/AndEqCountUpgradeUEDVehicalsLevel1CompleteOnlyCountUnitMilitaryResearchStationCompleteOnly=CountUpgrade(UEDVehicalsLevel1,CompleteOnly) == () && CountUnit(MilitaryResearchStation,CompleteOnly)
-RequirementNode/Name/AndEqCountUpgradeUEDVehicalsLevel2CompleteOnly1CountUnitMilitaryResearchStationCompleteOnly=CountUpgrade(UEDVehicalsLevel2,CompleteOnly) == 1 && CountUnit(MilitaryResearchStation,CompleteOnly)
-RequirementNode/Name/AndEqCountUpgradeUEDWeaponsLevel1CompleteOnly1CountUnitFieldBureauCompleteOnly=CountUpgrade(UEDWeaponsLevel1,CompleteOnly) == 1 && CountUnit(FieldBureau,CompleteOnly)
-RequirementNode/Name/AndEqCountUpgradeUEDWeaponsLevel2CompleteOnly1CountUnitFieldBureauCompleteOnly=CountUpgrade(UEDWeaponsLevel2,CompleteOnly) == 1 && CountUnit(FieldBureau,CompleteOnly)
 RequirementNode/Name/AndNotCountUpgradeUpgradeLazarusRegenHealfQueuedOrBetter=!CountUpgrade(UpgradeLazarusRegenHealf,QueuedOrBetter) && ()
 RequirementNode/Name/AndNotCountUpgradeUpgradePhosphoricFireQueuedOrBetter=!CountUpgrade(UpgradePhosphoricFire,QueuedOrBetter) && ()
 RequirementNode/Name/AndNotCountUpgradeUpgradeSpeedHurakanQueuedOrBetter=!CountUpgrade(UpgradeSpeedHurakan,QueuedOrBetter) && ()
@@ -998,7 +1009,6 @@ RequirementNode/Name/CountUnitFusionCoreCompleteOnly2=CountUnit(FusionCore,Compl
 RequirementNode/Name/CountUnitFusionCoreCompleteOnlyTechTreeCheat2=CountUnit(FusionCore,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUnitHeavyTowerCompleteOnlyTechTreeCheat=CountUnit(HeavyTower,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUnitInfusionTowerCompleteOnlyTechTreeCheat=CountUnit(InfusionTower,CompleteOnly)[TechTreeCheat]
-RequirementNode/Name/CountUnitMilitaryResearchStationCompleteOnly=CountUnit(MilitaryResearchStation,CompleteOnly)
 RequirementNode/Name/CountUnitMilitaryResearchStationCompleteOnly1297919308TechTreeCheat=CountUnit(MilitaryResearchStation,CompleteOnly){Military Research Station}[TechTreeCheat]
 RequirementNode/Name/CountUnitMissileTowerCompleteOnlyTechTreeCheat=CountUnit(MissileTower,CompleteOnly)[TechTreeCheat]
 RequirementNode/Name/CountUnitMunitionsFactoryCompleteOnly242926954TechTreeCheat=CountUnit(MunitionsFactory,CompleteOnly){Munitions Factory}[TechTreeCheat]
@@ -1038,6 +1048,11 @@ RequirementNode/Name/CountUpgradeUEDArmorLevel1QueuedOrBetter=CountUpgrade(UEDAr
 RequirementNode/Name/CountUpgradeUEDArmorLevel2CompleteOnly=CountUpgrade(UEDArmorLevel2,CompleteOnly)
 RequirementNode/Name/CountUpgradeUEDArmorLevel2QueuedOrBetter=CountUpgrade(UEDArmorLevel2,QueuedOrBetter)
 RequirementNode/Name/CountUpgradeUEDArmorLevel3QueuedOrBetter=CountUpgrade(UEDArmorLevel3,QueuedOrBetter)
+RequirementNode/Name/CountUpgradeUEDArmorLightLevel1CompleteOnly=CountUpgrade(UEDArmorLightLevel1,CompleteOnly)
+RequirementNode/Name/CountUpgradeUEDArmorLightLevel1QueuedOrBetter=CountUpgrade(UEDArmorLightLevel1,QueuedOrBetter)
+RequirementNode/Name/CountUpgradeUEDArmorLightLevel2CompleteOnly=CountUpgrade(UEDArmorLightLevel2,CompleteOnly)
+RequirementNode/Name/CountUpgradeUEDArmorLightLevel2QueuedOrBetter=CountUpgrade(UEDArmorLightLevel2,QueuedOrBetter)
+RequirementNode/Name/CountUpgradeUEDArmorLightLevel3QueuedOrBetter=CountUpgrade(UEDArmorLightLevel3,QueuedOrBetter)
 RequirementNode/Name/CountUpgradeUEDVehicalsLevel1CompleteOnly=CountUpgrade(UEDVehicalsLevel1,CompleteOnly)
 RequirementNode/Name/CountUpgradeUEDVehicalsLevel1QueuedOrBetter=CountUpgrade(UEDVehicalsLevel1,QueuedOrBetter)
 RequirementNode/Name/CountUpgradeUEDVehicalsLevel2CompleteOnly=CountUpgrade(UEDVehicalsLevel2,CompleteOnly)
@@ -1067,20 +1082,17 @@ RequirementNode/Name/CountUpgradeUpgradeTowerMiningCompleteOnly749832984TechTree
 RequirementNode/Name/CountUpgradeUpgradeTowerMiningQueuedOrBetter=CountUpgrade(UpgradeTowerMining,QueuedOrBetter)
 RequirementNode/Name/CountUpgradeUpgraideDrakkarCompleteOnly3974058837TechTreeCheat=CountUpgrade(UpgraideDrakkar,CompleteOnly){Запросить авторизацию на внутренний стабилизатор движения в академии тактики.}[TechTreeCheat]
 RequirementNode/Name/CountUpgradeUpgraideDrakkarQueuedOrBetter=CountUpgrade(UpgraideDrakkar,QueuedOrBetter)
-RequirementNode/Name/EqCountUpgradeUEDArmorLevel1CompleteOnly1=CountUpgrade(UEDArmorLevel1,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgradeUEDArmorLevel1QueuedOrBetter0=CountUpgrade(UEDArmorLevel1,QueuedOrBetter) == 0
-RequirementNode/Name/EqCountUpgradeUEDArmorLevel2CompleteOnly1=CountUpgrade(UEDArmorLevel2,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgradeUEDArmorLevel2QueuedOrBetter0=CountUpgrade(UEDArmorLevel2,QueuedOrBetter) == 0
 RequirementNode/Name/EqCountUpgradeUEDArmorLevel3QueuedOrBetter0=CountUpgrade(UEDArmorLevel3,QueuedOrBetter) == 0
+RequirementNode/Name/EqCountUpgradeUEDArmorLightLevel1QueuedOrBetter0=CountUpgrade(UEDArmorLightLevel1,QueuedOrBetter) == 0
+RequirementNode/Name/EqCountUpgradeUEDArmorLightLevel2QueuedOrBetter0=CountUpgrade(UEDArmorLightLevel2,QueuedOrBetter) == 0
+RequirementNode/Name/EqCountUpgradeUEDArmorLightLevel3QueuedOrBetter0=CountUpgrade(UEDArmorLightLevel3,QueuedOrBetter) == 0
 RequirementNode/Name/EqCountUpgradeUEDVehicalsLevel1CompleteOnly=CountUpgrade(UEDVehicalsLevel1,CompleteOnly) == ()
-RequirementNode/Name/EqCountUpgradeUEDVehicalsLevel1CompleteOnly1=CountUpgrade(UEDVehicalsLevel1,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgradeUEDVehicalsLevel1QueuedOrBetter0=CountUpgrade(UEDVehicalsLevel1,QueuedOrBetter) == 0
-RequirementNode/Name/EqCountUpgradeUEDVehicalsLevel2CompleteOnly1=CountUpgrade(UEDVehicalsLevel2,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgradeUEDVehicalsLevel2QueuedOrBetter0=CountUpgrade(UEDVehicalsLevel2,QueuedOrBetter) == 0
 RequirementNode/Name/EqCountUpgradeUEDVehicalsLevel3QueuedOrBetter0=CountUpgrade(UEDVehicalsLevel3,QueuedOrBetter) == 0
-RequirementNode/Name/EqCountUpgradeUEDWeaponsLevel1CompleteOnly1=CountUpgrade(UEDWeaponsLevel1,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgradeUEDWeaponsLevel1QueuedOrBetter0=CountUpgrade(UEDWeaponsLevel1,QueuedOrBetter) == 0
-RequirementNode/Name/EqCountUpgradeUEDWeaponsLevel2CompleteOnly1=CountUpgrade(UEDWeaponsLevel2,CompleteOnly) == 1
 RequirementNode/Name/EqCountUpgradeUEDWeaponsLevel2QueuedOrBetter0=CountUpgrade(UEDWeaponsLevel2,QueuedOrBetter) == 0
 RequirementNode/Name/EqCountUpgradeUEDWeaponsLevel3QueuedOrBetter0=CountUpgrade(UEDWeaponsLevel3,QueuedOrBetter) == 0
 RequirementNode/Name/GT28408138542CountBehaviorAlgoritmKolichestvoTowerMiningInProgressOrBetterAtUnit=2 > {Максимум 2 башни обогащения}CountBehavior(AlgoritmKolichestvoTowerMining,InProgressOrBetterAtUnit)
@@ -1455,7 +1467,10 @@ Validator/Name/ValidateForContinueFieldBeatan=Условие продолжен�
 Validator/Name/ValidateForHiddenAdvisorAbility=Ускорение в драккаре
 Validator/Name/ValidateHaveInvisDronUED=Наличие дрона невидимости
 Validator/Name/ValidateHaveInvisDronUEDCaster=Наличие дрона невидимости Кастер
+Validator/Name/ValidateLazarusNearUED=Лазарус рядом
 Validator/Name/ValidateLazarusRegenHealf=Полевое восстановление
+Validator/Name/ValidateLazarusUED=Лазарус
+Validator/Name/ValidateLifeLazarusUED=Живой лазарус
 Validator/Name/ValidateMineralDruseLive=Минеральная друза жива
 Validator/Name/ValidateNoDie=Не погиб
 Validator/Name/ValidateNoDronInvis=Отсутствие дрона маскировки

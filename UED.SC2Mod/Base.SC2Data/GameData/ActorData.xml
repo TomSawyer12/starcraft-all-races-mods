@@ -59,7 +59,7 @@
         <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="SetOpacity 0.500000"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="ModelAbilityPenemunde2"/>
-        <Scale value="1.750000"/>
+        <Scale value="1.300000"/>
     </CActorModel>
     <CActorSound id="SoundAgentAbilHightRegeneration" parent="SoundOneShot">
         <On Terms="Abil.AbilityHightRegeneration.SourceCastStart" Send="Create"/>
@@ -106,7 +106,7 @@
         <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="SetOpacity 1.000000"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="ModelAbilityPenemunde"/>
-        <Scale value="3.000000,8.000000,0.200000"/>
+        <Scale value="2.200000,6.000000,0.100000"/>
     </CActorModel>
     <CActorModel id="CursorSplatTowerMining" parent="ModelAnimationStyleOneShot">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
@@ -577,14 +577,14 @@
     </CActorUnit>
     <CActorAction id="HuracanAttack" parent="GenericAttackBase" effectAttack="Firebat">
         <On Terms="Effect.HurakanAttackSet.Start; At Caster" Send="Create"/>
-        <On Terms="Effect.FirebatUFull.Start; At Caster; FromEffectTreeDescendant" Send="ActionDamage"/>
+        <On Terms="Effect.FirebatUFullUED.Start; At Caster; FromEffectTreeDescendant" Send="ActionDamage"/>
         <LaunchModel value="HuracanAttackModel"/>
         <ContainerAssets Model="HuracanAttackLaunch" Sound="HuracanAttackLaunch"/>
         <ImpactMap index="None" Sound="Huracan_AttackImpact"/>
     </CActorAction>
     <CActorAction id="HuracanAttack2" parent="GenericAttackBase" effectAttack="Firebat">
         <On Terms="Effect.HurakanAttack2Set.Start; At Caster" Send="Create"/>
-        <On Terms="Effect.FirebatUFull.Start; At Caster; FromEffectTreeDescendant" Send="ActionDamage"/>
+        <On Terms="Effect.FirebatUFullUED.Start; At Caster; FromEffectTreeDescendant" Send="ActionDamage"/>
         <LaunchAssets Model="HuracanAttackLaunch2" Sound="HuracanAttackLaunch"/>
         <LaunchModel value="HuracanAttackModel2"/>
         <ContainerAssets Model="HuracanAttackLaunch2" Sound="HuracanAttackLaunch"/>
@@ -650,7 +650,7 @@
     </CActorModel>
     <CActorModel id="ImpactModelFlames" parent="ModelAnimationStyleOneShot">
         <Terms value="Cap 1"/>
-        <On Terms="Effect.FirebatUFull.Start; At Target" Send="Create"/>
+        <On Terms="Effect.FirebatUFullUED.Start; At Target" Send="Create"/>
         <On Terms="Effect.VolatileDeathDamage.Start; At Target" Send="Create"/>
         <On Terms="ActorOrphan" Send="Destroy"/>
         <Host Subject="_Selectable"/>
@@ -947,6 +947,8 @@
     <CActorRange id="BurrowChargeRevDRange2" parent="RangeAbil" abil="BurrowChargeRevD2">
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
+        <Abil Link=""/>
+        <Range value="6.000000"/>
     </CActorRange>
     <CActorModel id="CalldownIncomingMed">
         <Aliases value="_SnapshotExtra"/>
@@ -1549,7 +1551,7 @@
         <On Terms="Effect.BurrowChargeStructureTargetSearch.Start; At Caster" Send="AnimBaselineStart"/>
         <On Terms="Effect.BurrowChargeStructureTargetSearch.Start; At Caster" Send="Create BurrowChargeUpSound"/>
         <On Terms="Effect.BurrowChargeStructureTargetSearch.Start; At Caster" Send="StatusSet BurrowCharging 0"/>
-<!--        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimPlay {} Burrow"/>-->
+        <!--        <On Terms="UnitMovementUpdate.*.Walk" Send="AnimPlay {} Burrow"/>-->
         <On Terms="Abil.BurrowChargeRevD2.SourceCastStart" Send="StatusSet BurrowCharging 1"/>
         <ModelFlags index="OutlineEmitter" value="1"/>
         <DeathArray index="Normal" ModelLink="GarmrDeath" SoundLink="Garmr_Explode"/>
@@ -1814,6 +1816,7 @@
     </CActorAction>
     <CActorMissile id="PeenemundeMRLSAttackMissile" parent="GenericAttackMissile" unitName="PeenemundeMRLSWeapon">
         <Model value="PeenemundeMRLSBeam"/>
+        <Scale value="0.700000"/>
     </CActorMissile>
     <CActorSound id="PeenemundeMRLS_Death" parent="SoundOneShot">
         <On Terms="UnitDeath.PeenemundeMRLS; PassChance 25.000000" Send="Create"/>
@@ -1893,7 +1896,7 @@
         <FogVisibility value="Hidden"/>
         <On Terms="SelectionLocalUpdate.EnrichmentTower.Start" Send="Create"/>
         <On Terms="SelectionLocalUpdate.EnrichmentTower.Stop" Send="Destroy"/>
-        <Range value="4.500000"/>
+        <Range value="9.000000"/>
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="1.300000"/>
         <IconTint value="255,255,255,83"/>
@@ -4101,11 +4104,11 @@
     <CActorSound id="Typhoon_Death" parent="SoundOneShot">
         <On Terms="UnitDeath.Typhoon; PassChance 25.000000" Send="Create"/>
     </CActorSound>
-<!--    <CActorAction id="WarHoundAttack">-->
-<!--        <On Terms="Effect.HighPoweredShotLM.Start; At Caster" Send="Create"/>-->
-<!--        <On Terms="Effect.UEDWHLM2.Start; At Caster" Send="Create"/>-->
-<!--        <ContainerAssets Model="WarHoundBeam" Sound="RailGun_Launch"/>-->
-<!--    </CActorAction>-->
+    <!--    <CActorAction id="WarHoundAttack">-->
+    <!--        <On Terms="Effect.HighPoweredShotLM.Start; At Caster" Send="Create"/>-->
+    <!--        <On Terms="Effect.UEDWHLM2.Start; At Caster" Send="Create"/>-->
+    <!--        <ContainerAssets Model="WarHoundBeam" Sound="RailGun_Launch"/>-->
+    <!--    </CActorAction>-->
     <CActorAction id="UEDWHAttack" parent="GenericAttack">
         <On Terms="Effect.HighPoweredShotLM.Start; At Caster" Send="Create"/>
         <On Terms="Effect.UEDWHLM2.Start; At Caster" Send="Create"/>
@@ -4117,14 +4120,14 @@
         <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="RailgunAttackDeathForce"/>
         <ActionFlags index="LaunchForceSite" value="1"/>
     </CActorAction>
-<!--    <CActorBeamSimple id="WarHoundBeam">-->
-<!--        <On Terms="Effect.HighPoweredShotLM.Start; At Caster" Send="Create"/>-->
-<!--        <On Terms="Effect.HighPoweredShot.Start" Send="Create WarHoundImpactHoldingSite"/>-->
-<!--        <On Terms="Effect.HighPoweredShot.Start" Send="RefSet ::HostImpact WarHoundImpactHoldingSite"/>-->
-<!--        <On Terms="Effect.UEDWHLM2.Start; At Caster" Send="Create"/>-->
-<!--        <On Terms="Effect.UEDWH.Start" Send="Create WarHoundImpactHoldingSite"/>-->
-<!--        <On Terms="Effect.UEDWH.Start" Send="RefSet ::HostImpact WarHoundImpactHoldingSite"/>-->
-<!--    </CActorBeamSimple>-->
+    <!--    <CActorBeamSimple id="WarHoundBeam">-->
+    <!--        <On Terms="Effect.HighPoweredShotLM.Start; At Caster" Send="Create"/>-->
+    <!--        <On Terms="Effect.HighPoweredShot.Start" Send="Create WarHoundImpactHoldingSite"/>-->
+    <!--        <On Terms="Effect.HighPoweredShot.Start" Send="RefSet ::HostImpact WarHoundImpactHoldingSite"/>-->
+    <!--        <On Terms="Effect.UEDWHLM2.Start; At Caster" Send="Create"/>-->
+    <!--        <On Terms="Effect.UEDWH.Start" Send="Create WarHoundImpactHoldingSite"/>-->
+    <!--        <On Terms="Effect.UEDWH.Start" Send="RefSet ::HostImpact WarHoundImpactHoldingSite"/>-->
+    <!--    </CActorBeamSimple>-->
     <CActorBeamSimple id="UEDWHBeam" parent="GenericAttackBeam">
         <Inherits index="CloakEffect" value="1"/>
         <Inherits index="Visibility" value="1"/>
@@ -4402,7 +4405,6 @@
         <On Terms="Effect.EffectPeriodHelpAnimacionPenemunde.Start" Send="Create"/>
         <On Terms="Effect.EffectPeriodHelpAnimacionPenemunde.Stop" Send="Destroy"/>
         <HostSiteOps Ops="SOpShadow"/>
-        <Host Subject="_Unit" Scope="Target"/>
     </CActorModel>
     <CActorSound id="PeenemundeMRLSLMAttackTargetingSound" parent="SoundOneShot">
         <On Terms="Effect.PeenemundeMRLSLMTarget.Start" Send="Create"/>

@@ -13,6 +13,20 @@
         <EditorCategories value="Race:UED,TechType:Ability"/>
         <NodeArray index="Show" Link="AndNotCountUpgradeUpgradeLazarusRegenHealfQueuedOrBetter"/>
     </CRequirement>
+    <CRequirement id="LearnTUEDLightArmor1">
+        <EditorCategories value="Race:UED,TechType:Upgrade"/>
+        <NodeArray index="Show" Link="EqCountUpgradeUEDArmorLightLevel1QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="LearnTUEDLightArmor2">
+        <EditorCategories value="Race:UED,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDArmorLightLevel1CompleteOnlyCountUnitFieldBureauCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeUEDArmorLightLevel2QueuedOrBetter0"/>
+    </CRequirement>
+    <CRequirement id="LearnTUEDLightArmor3">
+        <EditorCategories value="Race:UED,TechType:Upgrade"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDArmorLightLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly"/>
+        <NodeArray index="Show" Link="EqCountUpgradeUEDArmorLightLevel3QueuedOrBetter0"/>
+    </CRequirement>
     <CRequirement id="LearnUpgraideDrakkar">
         <EditorCategories value="Race:UED,TechType:Ability"/>
         <NodeArray index="Show" Link="AndNotCountUpgradeUpgraideDrakkarQueuedOrBetter"/>
@@ -178,12 +192,12 @@
     </CRequirement>
     <CRequirement id="LearnUEDArmor2">
         <EditorCategories value="Race:UED,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndEqCountUpgradeUEDArmorLevel1CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDArmorLevel1CompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDArmorLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="LearnUEDArmor3">
         <EditorCategories value="Race:UED,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndEqCountUpgradeUEDArmorLevel2CompleteOnly1"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDArmorLevel2CompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDArmorLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="LearnUEDVehicals1">
@@ -192,12 +206,12 @@
     </CRequirement>
     <CRequirement id="LearnUEDVehicals2">
         <EditorCategories value="Race:UED,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndEqCountUpgradeUEDVehicalsLevel1CompleteOnly1CountUnitMilitaryResearchStationCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDVehicalsLevel1CompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDVehicalsLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="LearnUEDVehicals3">
         <EditorCategories value="Race:UED,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndEqCountUpgradeUEDVehicalsLevel2CompleteOnly1CountUnitMilitaryResearchStationCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDVehicalsLevel2CompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDVehicalsLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="UEDWeaponsLevel1">
@@ -206,12 +220,12 @@
     </CRequirement>
     <CRequirement id="UEDWeaponsLevel2">
         <EditorCategories value="Race:UED,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndEqCountUpgradeUEDWeaponsLevel1CompleteOnly1CountUnitFieldBureauCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDWeaponsLevel1CompleteOnlyCountUnitFieldBureauCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDWeaponsLevel2QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="UEDWeaponsLevel3">
         <EditorCategories value="Race:UED,TechType:Upgrade"/>
-        <NodeArray index="Use" Link="AndEqCountUpgradeUEDWeaponsLevel2CompleteOnly1CountUnitFieldBureauCompleteOnly"/>
+        <NodeArray index="Use" Link="AndCountUpgradeUEDWeaponsLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDWeaponsLevel3QueuedOrBetter0"/>
     </CRequirement>
     <CRequirement id="UseTowerMining">
