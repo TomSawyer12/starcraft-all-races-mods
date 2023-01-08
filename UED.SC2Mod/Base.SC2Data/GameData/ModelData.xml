@@ -49,6 +49,15 @@
         <SelectionRadius value="2.500000"/>
         <ShadowRadius value="2.500000"/>
     </CModel>
+    <CModel id="ModelUEDAnimationRadarCrimsonEya" parent="PersistentSpellFX">
+        <Model value="Assets\UI\Feedback\PingSimple\PingSimple.m3"/>
+        <EditorCategories value="Race:UED"/>
+    </CModel>
+    <CModel id="ModelUEDAnimationDetectionCrimsonEya" parent="PersistentSpellFX">
+        <Model value="Assets\UI\Feedback\AIBeaconDetectPing\AIBeaconDetectPing.m3"/>
+        <EditorCategories value="Race:UED"/>
+        <Lighting value="ModelUEDAnimationRadarCrimsonEya"/>
+    </CModel>
     <CModel id="NapoleonMachinegun" parent="AutoTurretBase">
         <Model value="Assets\Buildings\Terran\AutoTurret\AutoTurret.m3"/>
         <ScaleMax value="0.250000,0.250000,0.250000"/>
@@ -105,8 +114,8 @@
     <CModel id="HuracanAttackLaunch" parent="LaunchFX">
         <Model value="Assets\Effects\Terran\FlameTurretLaunch\FlameTurretLaunch.m3"/>
         <EditorCategories value="Race:UED"/>
-        <ScaleMax value="0.100000,0.600000,0.100000"/>
-        <ScaleMin value="0.100000,0.600000,0.100000"/>
+        <ScaleMax value="0.100000,1.000000,0.100000"/>
+        <ScaleMin value="0.100000,1.000000,0.100000"/>
     </CModel>
     <CModel id="HuracanAttackLaunch2" parent="LaunchFX">
         <Model value="Assets\Effects\Terran\FlameTurretLaunch\FlameTurretLaunch.m3"/>
@@ -915,8 +924,8 @@
     </CModel>
     <CModel id="DrakkarAPC" parent="HellionBase">
         <Model value="Assets\Units\UED_Militarized_Transport\UED_MilitarizedTransport_V1.m3"/>
-        <ScaleMax value="0.700000,0.700000,0.700000"/>
-        <ScaleMin value="0.700000,0.700000,0.700000"/>
+        <ScaleMax value="0.680000,0.680000,0.680000"/>
+        <ScaleMin value="0.680000,0.680000,0.680000"/>
         <SelectionRadius value="2.000000"/>
         <ShadowRadius value="2.000000"/>
         <EditorCategories value="Race:UED"/>
@@ -1307,9 +1316,9 @@
     </CModel>
     <CModel id="Strikefighter" parent="BansheeBase">
         <Model value="Assets\Units\UED\UED_shadow&apos;s_pacifier V2\UED_shadow&apos;s_pacifier_V3.m3"/>
-        <ScaleMax value="0.400000,0.400000,0.400000"/>
-        <ScaleMin value="0.400000,0.400000,0.400000"/>
-        <SelectionRadius value="2.500000"/>
+        <ScaleMax value="0.380000,0.380000,0.380000"/>
+        <ScaleMin value="0.380000,0.380000,0.380000"/>
+        <SelectionRadius value="2.400000"/>
         <EditorCategories value="Race:UED"/>
     </CModel>
     <CModel id="StrikefighterAttackGroundImpact" parent="ImpactFX">

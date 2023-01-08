@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CActorModel id="AgentCrimsonEyaAnimationRadar" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On Terms="Behavior.AlgoritmRadarCrimsonEye.On" Send="Create"/>
+        <On Terms="Behavior.AlgoritmRadarCrimsonEye.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+        <Model value="ModelUEDAnimationRadarCrimsonEya"/>
+        <Scale value="3.500000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
+    </CActorModel>
     <CActorModel id="AgentTowerHightRegenerationUED" parent="ModelAnimationStyleOneShot">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
         <On Terms="Effect.SearchAreaHightRegeneration.Start" Send="Create"/>
@@ -9,6 +20,17 @@
         <On Terms="ActorCreation" Send="SetTintColor 255,255,0"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="ModelUEDAnimationHightRegeneration"/>
+    </CActorModel>
+    <CActorModel id="AgentCrimsonEyaAnimationDetection" parent="ModelAnimationStyleContinuousUNIT">
+        <Inherits index="CloakEffect" value="1"/>
+        <Inherits index="Visibility" value="1"/>
+        <Inherits index="WarpGroup" value="1"/>
+        <On Terms="Behavior.AlgoritmDetectorCrimsonEye.On" Send="Create"/>
+        <On Terms="Behavior.AlgoritmDetectorCrimsonEye.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachHardPoint"/>
+        <Model value="ModelUEDAnimationDetectionCrimsonEya"/>
+        <Scale value="3.000000"/>
+        <ModelFlags index="AllowHitTest" value="0"/>
     </CActorModel>
     <CActorModel id="CloakingDroneModel">
         <On Terms="Behavior.AlgoritmCloakingDroneUED.Off" Send="Destroy"/>
@@ -37,6 +59,29 @@
         <Range value="10.000000"/>
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
     </CActorRange>
+    <CActorModel id="ResoursesUEDModelBig" parent="ModelAddition">
+        <On Terms="Behavior.AlgoritmDruseBeatanField.On" Send="Create"/>
+        <On Terms="Behavior.AlgoritmDruseBeatanField.Off" Send="AnimBracketStop BSD"/>
+        <HostSiteOps Ops="SOpAttachCenter SOpForwardNorth"/>
+        <Model value="ResourceDoublingFieldMODEL"/>
+        <AutoScaleFactor value="0.250000"/>
+    </CActorModel>
+    <CActorSound id="SoundAgentAbilCrimsonEyeRadarStart" parent="SoundOneShot">
+        <On Terms="Behavior.AlgoritmRadarCrimsonEye.On" Send="Create"/>
+        <Sound value="SoundCrimsonEyaRadarStart"/>
+    </CActorSound>
+    <CActorSound id="SoundAgentAbilCrimsonEyeRadarStop" parent="SoundOneShot">
+        <On Terms="Behavior.AlgoritmRadarCrimsonEye.Off" Send="Create"/>
+        <Sound value="SoundCrimsonYeaRadarStop"/>
+    </CActorSound>
+    <CActorSound id="SoundAgentDrakkarModeShooting" parent="SoundOneShot">
+        <On Terms="Behavior.DrakkarAlgoritmFireMode.On" Send="Create"/>
+        <Sound value="SoundDrakkarShootingMode"/>
+    </CActorSound>
+    <CActorSound id="SoundAgentDrakkarModeMove" parent="SoundOneShot">
+        <On Terms="Behavior.DrakkarAlgoritmFireMode.Off" Send="Create"/>
+        <Sound value="SoundModeMoveUEDDrakkar"/>
+    </CActorSound>
     <CActorModel id="UEDEMPAttackImpactEffect" parent="ModelAnimationStyleOneShot">
         <On Terms="Effect.SearchAreaBlidingFlash.Start" Send="Create"/>
         <On Terms="Effect.SearchAreaBlidingFlash.Stop" Send="AnimBracketStop BSD"/>
@@ -53,13 +98,13 @@
     </CActorRange>
     <CActorModel id="PeenemundeAgentPeriodDamage_2" parent="ModelAnimationStyleOneShot">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="Create"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Stop" Send="Destroy"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="SetTintColor 149,202,255"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="SetOpacity 0.500000"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Start" Send="Create"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Stop" Send="Destroy"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Start" Send="SetTintColor 149,202,255"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Start" Send="SetOpacity 0.500000"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="ModelAbilityPenemunde2"/>
-        <Scale value="1.300000"/>
+        <Scale value="1.700000"/>
     </CActorModel>
     <CActorSound id="SoundAgentAbilHightRegeneration" parent="SoundOneShot">
         <On Terms="Abil.AbilityHightRegeneration.SourceCastStart" Send="Create"/>
@@ -70,9 +115,9 @@
         <HostSiteOps Ops="SOpTargetPointStationary"/>
         <Sound value="SoundLazarusRegenHealf"/>
     </CActorSound>
-    <CActorSound id="SoundAgentAbilCrimsonEye" parent="SoundOneShot">
+    <CActorSound id="SoundAgentAbilCrimsonEyeDetector" parent="SoundOneShot">
         <On Terms="Behavior.AlgoritmDetectorCrimsonEye.On" Send="Create"/>
-        <Sound value="SoundCrimsonEya"/>
+        <Sound value="SoundCrimsonEyaDetector"/>
     </CActorSound>
     <CActorModel id="DropModelTowerMining" parent="ModelAnimationStyleOneShotNoOrphan">
         <On Terms="Effect.EffectPeriodTimeDropTowerMining.Start" Send="Create"/>
@@ -100,13 +145,13 @@
     </CActorModel>
     <CActorModel id="PeenemundeAgentPeriodDamage_1" parent="ModelAnimationStyleOneShot">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="Create"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Stop" Send="Destroy"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="SetTintColor 128,233,255"/>
-        <On Terms="Effect.EffektPeriodPenemundeDamagePeriod.Start" Send="SetOpacity 1.000000"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Start" Send="Create"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Stop" Send="Destroy"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Start" Send="SetTintColor 128,233,255"/>
+        <On Terms="Effect.EffektFirePenemundePeriod.Start" Send="SetOpacity 1.000000"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="ModelAbilityPenemunde"/>
-        <Scale value="2.200000,6.000000,0.100000"/>
+        <Scale value="3.000000,8.000000,0.100000"/>
     </CActorModel>
     <CActorModel id="CursorSplatTowerMining" parent="ModelAnimationStyleOneShot">
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
@@ -126,10 +171,9 @@
         <Filter index="Enemy" value="1"/>
         <Inherits index="Visibility" value="0"/>
         <FogVisibility value="Visible"/>
-        <On Terms="Behavior.AlgoritmDetectorCrimsonEye.On" Send="Create"/>
-        <On Terms="Behavior.AlgoritmDetectorCrimsonEye.Off" Send="Destroy"/>
-        <Behavior value="AlgoritmDetectorCrimsonEye"/>
-        <Range value="16.000000"/>
+        <On Terms="Behavior.AlgoritmRadarCrimsonEye.On" Send="Create"/>
+        <On Terms="Behavior.AlgoritmRadarCrimsonEye.Off" Send="Destroy"/>
+        <Behavior value="AlgoritmRadarCrimsonEye"/>
         <Icon value="Assets\Textures\RadarIcon2.dds"/>
         <IconArcLength value="3.250000"/>
         <RangeFlags index="Minimap" value="1"/>
@@ -708,7 +752,7 @@
     <CActorSimple id="ColourDruseOnFieldBeatan">
         <Aliases value="_AngryTinter"/>
         <On Terms="BehaviorLevel.AlgoritmDruseBeatanField.Start" Send="Create"/>
-        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 255,255,94 0.500000 OneShot SeekerTarget"/>
+        <On Terms="ActorCreation" Target="_Unit" Send="SetTintColor 255,255,130 0.500000 OneShot SeekerTarget"/>
         <On Terms="Behavior.AlgoritmDruseBeatanField.Off" Target="_Unit" Send="ClearTintColor 0.500000 SeekerTarget"/>
         <On Terms="Behavior.AlgoritmDruseBeatanField.Off" Send="Destroy"/>
     </CActorSimple>
@@ -1106,7 +1150,7 @@
         <On index="0" Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death OpeningPlayForever"/>
         <On Terms="Effect.EffektPeriodSupressionField.Start" Send="Create"/>
         <On Terms="Effect.EffektPeriodSupressionField.Stop" Send="AnimBracketStop BSD"/>
-        <On Terms="ActorCreation" Send="SetScale 0.670000"/>
+        <On Terms="ActorCreation" Send="SetScale"/>
         <On Terms="ActorCreation" Send="SetTintColor {128,0,128 1.400000}"/>
         <HostSiteOps Ops="SOpShadow"/>
         <Model value="TemporalFieldModel"/>
@@ -2235,7 +2279,7 @@
         <On Terms="Behavior.BeathaniumInfusionField2.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachCenter SOpForwardNorth"/>
     </CActorModel>
-    <CActorModel id="ResoursesUEDModel" parent="ModelAddition">
+    <CActorModel id="ResoursesUEDModelSmall" parent="ModelAddition">
         <On Terms="Behavior.ResourceDoublingField.On" Send="Create"/>
         <On Terms="Behavior.ResourceDoublingField.Off" Send="AnimBracketStop BSD"/>
         <HostSiteOps Ops="SOpAttachCenter SOpForwardNorth"/>
@@ -4002,8 +4046,8 @@
         <Macros value="PhysicsDeathsSwarmGround"/>
         <Macros value="TerrainSquibAnimations"/>
         <Macros value="PhysicsDeathsVoidGround"/>
-        <On Terms="WeaponStart.TyphoonWeapon.AttackStart" Send="AnimBracketStart Attack Attack,Superior"/>
-        <On Terms="WeaponStop.TyphoonWeapon.AttackStop" Send="TimerSet 1.000000 SuperiorReset"/>
+        <On Terms="WeaponStart.TyphoonWeaponGrond.AttackStart" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStop.TyphoonWeaponGrond.AttackStop" Send="TimerSet 1.000000 SuperiorReset"/>
         <On Terms="WeaponStart.WarHoundMelee.AttackStart" Send="AnimBracketStart Attack Spell,A"/>
         <On Terms="WeaponStop.WarHoundMelee.AttackStop" Send="AnimBracketStop Attack"/>
         <On Terms="Effect.TornadoMissileCP.Start; At Caster" Send="AnimBracketStart Cover Cover,Start Cover Cover,End"/>
@@ -4068,6 +4112,8 @@
         <ImpactMap index="None" Sound="Typhoon_AttackImpact"/>
         <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="RailgunAttackDeathForce"/>
         <ActionFlags index="LaunchForceSite" value="1"/>
+        <On Terms="Effect.TyphoonDamageAir.Start; FromEffectTreeDescendant" Send="ActionImpact"/>
+        <On Terms="Effect.TyphoonDamageAir.Stop; FromEffectTreeDescendant" Send="ActionImpactPhysics"/>
     </CActorAction>
     <CActorAction id="VikingAssaultAttack2" parent="GenericAttack" effectAttack="TwinGatlingCannons2">
         <LaunchAttachQuery Methods="AMFilterWeapon"/>
