@@ -52,12 +52,12 @@
         <Macros value="TerrainSquibAnimations"/>
         <Macros value="PhysicsDeathsSwarmGround"/>
         <Macros value="PhysicsDeathsVoidGround"/>
-        <On index="0" Terms="UnitBirth.UEDGoliath"/>
-        <On index="1" Terms="UnitBirth.UEDGoliath"/>
-        <On index="2" Terms="UnitRevive.UEDGoliath"/>
-        <On index="3" Terms="UnitRevive.UEDGoliath"/>
-        <On index="4" Terms="UnitConstruction.UEDGoliath.Start"/>
-        <On index="5" Terms="UnitConstruction.UEDGoliath.Finish"/>
+        <On index="0" Terms="UnitBirth.UEDUnitGoliath"/>
+        <On index="1" Terms="UnitBirth.UEDUnitGoliath"/>
+        <On index="2" Terms="UnitRevive.UEDUnitGoliath"/>
+        <On index="3" Terms="UnitRevive.UEDUnitGoliath"/>
+        <On index="4" Terms="UnitConstruction.UEDUnitGoliath.Start"/>
+        <On index="5" Terms="UnitConstruction.UEDUnitGoliath.Finish"/>
         <On Terms="WeaponStart.UEDGoliathGunGround.AttackStart" Send="AnimBracketStart Attack Attack"/>
         <On Terms="WeaponStop.UEDGoliathGunGround.AttackStop" Send="AnimBracketStop Attack"/>
         <Model value="UEDModelGoliath"/>
@@ -102,11 +102,6 @@
         </GroupIcon>
         <HeroIcon value="Assets\Textures\btn-unit-terran-goliath.dds"/>
         <LifeArmorIcon value="Assets\btn-upgrade-ued-armor-level0.dds"/>
-        <UnitFlags index="StandAnimBirthVariation" value="0"/>
-        <UnitIcon value="Assets\Textures\btn-unit-terran-goliath.dds"/>
-        <Wireframe>
-            <Image value="Assets\Textures\btn-unit-terran-goliath.dds"/>
-        </Wireframe>
         <SoundArray index="Ready" value="UEDSoundGoliathReady"/>
         <SoundArray index="Help" value="UEDSoundGoliathHelp"/>
         <SoundArray index="What" value="UEDSoundGoliathWhat"/>
@@ -114,6 +109,11 @@
         <SoundArray index="Attack" value="UEDSoundGoliathAttack"/>
         <SoundArray index="Pissed" value="UEDSoundGoliathHelp"/>
         <SoundArray index="Movement" value="UEDSoundGoliathMove"/>
+        <UnitFlags index="StandAnimBirthVariation" value="0"/>
+        <UnitIcon value="Assets\Textures\btn-unit-terran-goliath.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\btn-unit-terran-goliath.dds"/>
+        </Wireframe>
     </CActorUnit>
     <CActorModel id="UEDAgentDefMatrixNapoleon" parent="ModelAnimationStyleContinuousUNIT">
         <Inherits index="CloakEffect" value="1"/>
@@ -4289,7 +4289,7 @@
         <Macros value="PhysicsDeathsSwarmGround"/>
         <Macros value="TerrainSquibAnimations"/>
         <Macros value="PhysicsDeathsVoidGround"/>
-        <On Terms="WeaponStart.TyphoonWeaponGrond.AttackStart" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.TyphoonWeaponGrond.AttackStart" Send="AnimBracketStart Attack Attack,Superior {} {} 0 1.200000 AsDuration"/>
         <On Terms="WeaponStop.TyphoonWeaponGrond.AttackStop" Send="TimerSet 1.000000 SuperiorReset"/>
         <On Terms="WeaponStart.WarHoundMelee.AttackStart" Send="AnimBracketStart Attack Spell,A"/>
         <On Terms="WeaponStop.WarHoundMelee.AttackStop" Send="AnimBracketStop Attack"/>
@@ -4347,10 +4347,9 @@
             <Image value="Assets\Textures\wireframe-unit-mrlsbronze.dds"/>
         </Wireframe>
     </CActorUnit>
-    <CActorAction id="TyphoonAttack" parent="GenericAttack" effectImpact="TyphoonDamageGround" effectLaunch="TyphoonLM">
-        <LaunchAttachQuery Methods="AMFilterWeapon01 AMFilterWeapon02 AMFilterWeapon03"/>
-        <LaunchAssets Sound="Typhoon_AttackILaunch"/>
-        <ContainerAttachQuery Methods="AMFilterWeapon01 AMProximityTargetAll AMPortAllocatorBunker"/>
+    <CActorAction id="TyphoonAttack" parent="GenericAttack" effectImpact="TyphoonDamageGround" effectLaunch="UEDTyphoonLM">
+        <LaunchAttachQuery Methods="UEDAMPatternTyphoon"/>
+        <LaunchAssets Model="UEDModelTyphoonRocketLaunh" Sound="Typhoon_AttackILaunch"/>
         <BeamScope value="Caster"/>
         <ImpactMap index="None" Sound="Typhoon_AttackImpact"/>
         <ImpactPhysics Name="RailgunImpact" MatchKeys="Basic" Physics="RailgunAttackDeathForce"/>

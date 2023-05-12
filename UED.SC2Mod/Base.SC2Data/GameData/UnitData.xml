@@ -325,6 +325,7 @@
         <LifeArmorTip value="Unit/LifeArmorName/UEDArmor"/>
         <Speed value="3.1015"/>
         <Acceleration value="6"/>
+        <Deceleration value="6"/>
         <LateralAcceleration value="46"/>
         <StationaryTurningRate value="1499.9414"/>
         <Sight value="10"/>
@@ -380,14 +381,13 @@
         <GlossaryWeakArray value="Roach"/>
         <GlossaryWeakArray value="Stalker"/>
         <HotkeyCategory value="Unit/Category/UEDUnits"/>
-        <Deceleration value="6"/>
     </CUnit>
     <CUnit id="UEDGoliathWeaponAir" parent="MISSILE">
         <Race value="UED"/>
         <Mover value="ThorAA"/>
         <EditorCategories value="ObjectType:Projectile,ObjectFamily:Melee"/>
     </CUnit>
-    <CUnit id="UEDGoliath">
+    <CUnit id="UEDUnitGoliath">
         <DeathRevealRadius value="3"/>
         <Race value="UED"/>
         <Mob value="Multiplayer"/>
@@ -446,9 +446,9 @@
         <TechAliasArray value="Alias_Hellion"/>
         <GlossaryCategory value="Unit/Category/UEDUnits"/>
         <GlossaryPriority value="80"/>
-        <GlossaryStrongArray value="RoachACGluescreenDummy"/>
-        <GlossaryStrongArray value="PhoenixAiurACGluescreenDummy"/>
-        <GlossaryStrongArray value="BansheeACGluescreenDummy"/>
+        <GlossaryStrongArray value="Stalker"/>
+        <GlossaryStrongArray value="Carrier"/>
+        <GlossaryStrongArray value="Battlecruiser"/>
         <GlossaryWeakArray value="Cyclone"/>
         <GlossaryWeakArray value="MarauderACGluescreenDummy"/>
         <GlossaryWeakArray value="SiegeTankSieged"/>
@@ -973,7 +973,6 @@
             <LayoutButtons Face="PrecisionStrikeDescription" Type="Passive" AbilCmd="PeenemundeMRLSLM,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attackUED,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
-            <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="PeenemundeMRLSLM,Cancel" Row="2" Column="4"/>
             <LayoutButtons Face="UEDButtonStopAttackPenemunde" Type="AbilCmd" AbilCmd="UEDPenemundeStopAttack,On" Row="1" Column="0"/>
             <LayoutButtons Face="UEDButtonPenemundeCanAttack" Type="AbilCmd" AbilCmd="UEDPenemundeStopAttack,Off" Row="1" Column="1"/>
         </CardLayouts>
@@ -1333,7 +1332,7 @@
             <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Row="0" Column="1"/>
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="moveUED,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
-            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attackUED,Execute" Row="0" Column="4"/>
+            <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="CloakingDrone" Type="AbilCmd" AbilCmd="CloakingDrone,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="DeployPsionicSuppressionField" Type="AbilCmd" AbilCmd="PsionicSuppressionField,Execute" Row="2" Column="2"/>

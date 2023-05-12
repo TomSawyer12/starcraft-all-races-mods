@@ -121,7 +121,7 @@
         <ScoreResult value="BuildOrder"/>
         <EffectArray Reference="Effect,UEDDamageGoliathGround,AttributeBonus[Armored]" Value="3"/>
         <EditorCategories value="Race:UED,UpgradeType:SpellResearch"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderAlias value="UpgradeAbilityCitadelUED"/>
     </CUpgrade>
     <CUpgrade id="UpgradeAbilityNapoleon" parent="Research">
@@ -423,8 +423,8 @@
         <EffectArray Reference="Unit,Salvager,LifeArmor" Value="1"/>
         <EffectArray Reference="Unit,Salvager,LifeArmorLevel" Value="1"/>
         <EffectArray Operation="Set" Reference="Actor,UEDUnitGoliath,LifeArmorIcon" Value="Assets\btn-upgrade-ued-armor-level1.dds"/>
-        <EffectArray Reference="Unit,UEDGoliath,LifeArmor" Value="1"/>
-        <EffectArray Reference="Unit,UEDGoliath,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,UEDUnitGoliath,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,UEDUnitGoliath,LifeArmorLevel" Value="1"/>
         <AffectedUnitArray index="0" value="CitadelAAT"/>
         <AffectedUnitArray index="1" value="BeaconUED"/>
         <AffectedUnitArray index="2" value="Typhoon"/>
@@ -438,7 +438,7 @@
         <AffectedUnitArray value="TransportShuttle"/>
         <AffectedUnitArray value="Huracan"/>
         <AffectedUnitArray value="Salvager"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderLevel value="1"/>
         <EditorCategories value="Race:UED,UpgradeType:ArmorBonus"/>
         <Alert value="UpgradeComplete_ued"/>
@@ -493,8 +493,8 @@
         <EffectArray Reference="Unit,Salvager,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,Salvager,LifeArmor" Value="1"/>
         <EffectArray Operation="Set" Reference="Actor,UEDUnitGoliath,LifeArmorIcon" Value="Assets\btn-upgrade-ued-armor-level2.dds"/>
-        <EffectArray Reference="Unit,UEDGoliath,LifeArmor" Value="1"/>
-        <EffectArray Reference="Unit,UEDGoliath,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,UEDUnitGoliath,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,UEDUnitGoliath,LifeArmorLevel" Value="1"/>
         <EditorCategories value="Race:UED,UpgradeType:ArmorBonus"/>
         <AffectedUnitArray index="0" value="CitadelAAT"/>
         <AffectedUnitArray index="1" value="BeaconUED"/>
@@ -509,7 +509,7 @@
         <AffectedUnitArray value="TransportShuttle"/>
         <AffectedUnitArray value="Huracan"/>
         <AffectedUnitArray value="Salvager"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderLevel value="2"/>
     </CUpgrade>
     <CUpgrade id="UEDArmorLevel3" parent="TerranInfantryArmors">
@@ -561,8 +561,8 @@
         <EffectArray Reference="Unit,Salvager,LifeArmorLevel" Value="1"/>
         <EffectArray Reference="Unit,Salvager,LifeArmor" Value="1"/>
         <EffectArray Operation="Set" Reference="Actor,UEDUnitGoliath,LifeArmorIcon" Value="Assets\btn-upgrade-ued-armor-level3.dds"/>
-        <EffectArray Reference="Unit,UEDGoliath,LifeArmor" Value="1"/>
-        <EffectArray Reference="Unit,UEDGoliath,LifeArmorLevel" Value="1"/>
+        <EffectArray Reference="Unit,UEDUnitGoliath,LifeArmor" Value="1"/>
+        <EffectArray Reference="Unit,UEDUnitGoliath,LifeArmorLevel" Value="1"/>
         <AffectedUnitArray index="0" value="CitadelAAT"/>
         <AffectedUnitArray index="1" value="BeaconUED"/>
         <AffectedUnitArray index="2" value="Typhoon"/>
@@ -576,7 +576,7 @@
         <AffectedUnitArray value="TransportShuttle"/>
         <AffectedUnitArray value="Huracan"/>
         <AffectedUnitArray value="Salvager"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderLevel value="3"/>
         <EditorCategories value="Race:UED,UpgradeType:ArmorBonus"/>
         <Alert value="UpgradeComplete_ued"/>
@@ -656,7 +656,7 @@
         <AffectedUnitArray value="SupportShuttle"/>
         <AffectedUnitArray value="TransportShuttle"/>
         <AffectedUnitArray value="Huracan"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderLevel value="2"/>
         <EditorCategories value="Race:UED,UpgradeType:AttackBonus"/>
         <Alert value="UpgradeComplete_ued"/>
@@ -733,7 +733,7 @@
         <AffectedUnitArray value="SupportShuttle"/>
         <AffectedUnitArray value="TransportShuttle"/>
         <AffectedUnitArray value="Huracan"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderLevel value="3"/>
         <Alert value="UpgradeComplete_ued"/>
     </CUpgrade>
@@ -840,7 +840,7 @@
         <AffectedUnitArray value="PeenemundeMRLS"/>
         <AffectedUnitArray value="Strikefighter"/>
         <AffectedUnitArray value="Huracan"/>
-        <AffectedUnitArray value="UEDGoliath"/>
+        <AffectedUnitArray value="UEDUnitGoliath"/>
         <LeaderLevel value="1"/>
         <EditorCategories value="Race:UED,UpgradeType:AttackBonus"/>
         <Alert value="UpgradeComplete_ued"/>

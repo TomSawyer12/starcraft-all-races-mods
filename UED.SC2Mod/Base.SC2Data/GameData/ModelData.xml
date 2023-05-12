@@ -17,6 +17,13 @@
         <ScaleMax value="1.500000,1.500000,1.500000"/>
         <ScaleMin value="1.500000,1.500000,1.500000"/>
     </CModel>
+    <CModel id="UEDModelTyphoonRocketLaunh" parent="LaunchFX">
+        <Model value="Assets\Effects\Terran\TankWeaponLaunch\TankWeaponLaunch.m3"/>
+        <EditorCategories value="Race:UED"/>
+        <Lighting value="UEDModelGoliathLaunchMissle"/>
+        <ScaleMax value="0.750000,0.750000,0.750000"/>
+        <ScaleMin value="0.750000,0.750000,0.750000"/>
+    </CModel>
     <CModel id="UEDModelGoliathMissile" parent="MissileFX">
         <Model value="Assets\Effects\Terran\GoliathMissile\GoliathMissile.m3"/>
         <EditorCategories value="Race:UED"/>
@@ -1976,8 +1983,8 @@
     <CModel id="UEDModelGoliathLaunchMissle" parent="LaunchFX">
         <Model value="Assets\Effects\Terran\TankWeaponLaunch\TankWeaponLaunch.m3"/>
         <EditorCategories value="Race:UED"/>
-        <ScaleMax value="0.800000,0.800000,0.800000"/>
-        <ScaleMin value="0.800000,0.800000,0.800000"/>
+        <ScaleMax value="0.500000,0.500000,0.500000"/>
+        <ScaleMin value="0.500000,0.500000,0.500000"/>
     </CModel>
     <CModel id="VikingFighterWeapon2" parent="MissileFX">
         <Model value="Assets\Effects\Terran\ArcadeVikingMissile\ArcadeVikingMissile.m3"/>

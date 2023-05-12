@@ -12,30 +12,33 @@
         <WhichUnit Value="Outer"/>
         <Filters value="-;Hidden"/>
     </CValidatorUnitFilters>
+    <CValidatorUnitOrderQueue id="ValidateCasterIsAttackUED">
+        <AbilLink value="attackUED"/>
+    </CValidatorUnitOrderQueue>
     <CValidatorUnitCompareBehaviorCount id="ValidateCitadelUseAbility">
         <WhichUnit Value="Caster"/>
         <Compare value="GT"/>
         <Behavior value="AlgoritmAttackCitadelAbility"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitCompareBehaviorCount id="UEDValidatorenemundeOrderOutAttack">
+    <CValidatorUnitCompareBehaviorCount id="UEDValidatorPenemundeSplashAttack">
         <ResultFailed value="Error,Error/TargetIsAlive"/>
         <WhichUnit Value="Caster"/>
         <Compare value="GT"/>
-        <Behavior value="AlgoritmPenemundeOutAttackCan"/>
+        <Behavior value="AlgoritmPenemundeSpalshMos"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitCompareBehaviorCount id="ValidatePenemundeInAttack">
+    <CValidatorUnitCompareBehaviorCount id="ValidatePenemundeStandardMod">
         <WhichUnit Value="Caster"/>
-        <Behavior value="AlgoritmPenemundeOutAttackCan"/>
+        <Behavior value="AlgoritmPenemundeSpalshMos"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorCombine id="ValidateUEDPenemundeModAttack">
+    <CValidatorCombine id="ValidateUEDPenemundeModSplashAttack">
         <Type value="And"/>
-        <CombineArray value="UEDValidatorenemundeOrderOutAttack"/>
+        <CombineArray value="UEDValidatorPenemundeSplashAttack"/>
         <CombineArray value="ValidatePenemundeMarker"/>
     </CValidatorCombine>
-    <CValidatorUnitCompareBehaviorCount id="ValidatePenemundeOtklAttack">
+    <CValidatorUnitCompareBehaviorCount id="ValidatePenemundeContinueAttack">
         <WhichUnit Value="Caster"/>
         <Compare value="GT"/>
-        <Behavior value="AlgoritmPenemundeOutAttackCan"/>
+        <Behavior value="PenemundeAlgoritmContinueAttack"/>
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorUnitType id="ValidateUEDAirStructure">
         <Value value="StarshipMaintenancePlant"/>
@@ -129,8 +132,9 @@
         <ResultFailed value="Error,UEDErrorChangeGunFly"/>
     </CValidatorLocationEnumArea>
     <CValidatorCombine id="ValidateUEDPenemundeModAttackAll">
-        <CombineArray value="ValidateUEDPenemundeModAttack"/>
-        <CombineArray value="ValidatePenemundeInAttack"/>
+        <CombineArray value="ValidateUEDPenemundeModSplashAttack"/>
+        <CombineArray value="ValidatePenemundeStandardMod"/>
+        <CombineArray value="ValidatePenemundeContinueAttack"/>
     </CValidatorCombine>
     <CValidatorUnitCompareBehaviorCount id="ValidateUnitInDrakkar">
         <Compare value="GT"/>
@@ -168,7 +172,7 @@
         <Compare value="GT"/>
         <Behavior value="AlgoritmIrradiationFieldBeatan"/>
     </CValidatorUnitCompareBehaviorCount>
-    <CValidatorUnitOrderQueue id="ValidateCasterIsAttackStandard">
+    <CValidatorUnitOrderQueue id="ValidateTargetIsAttackStandard">
         <WhichUnit Value="Target"/>
         <AbilLink value="attack"/>
     </CValidatorUnitOrderQueue>
@@ -213,8 +217,8 @@
     </CValidatorUnitCompareBehaviorCount>
     <CValidatorCombine id="ValidateCloackDronAttackBan">
         <Type value="And"/>
-        <CombineArray value="ValidateCasterIsAttackUED"/>
-        <CombineArray value="ValidateCasterIsAttackStandard"/>
+        <CombineArray value="ValidateTargetIsAttackUED"/>
+        <CombineArray value="ValidateTargetIsAttackStandard"/>
         <Negate value="1"/>
     </CValidatorCombine>
     <CValidatorCombine id="ValidateForContinueFieldBeatan">
@@ -252,7 +256,7 @@
         <AbilLink value="UpgradeToInfusionTower"/>
         <Value value="1"/>
     </CValidatorUnitCompareOrderCount>
-    <CValidatorUnitOrderQueue id="ValidateCasterIsAttackUED">
+    <CValidatorUnitOrderQueue id="ValidateTargetIsAttackUED">
         <WhichUnit Value="Target"/>
         <AbilLink value="attackUED"/>
     </CValidatorUnitOrderQueue>

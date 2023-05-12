@@ -96,7 +96,6 @@
     <CButton id="ButtonDrakkarFastMove">
         <Icon value="Assets\Textures\btn-ability-mengsk-viking-speed.dds"/>
         <EditorCategories value="Race:UED"/>
-        <HotkeyAlias value="ButtonUpgradeDrakkar"/>
     </CButton>
     <CButton id="ButtonRadarCrimsonYea">
         <Icon value="Assets\Textures\btn-status-radar.dds"/>
@@ -182,12 +181,11 @@
     <CButton id="ButtonDrakkarFireMode">
         <Icon value="Assets\Textures\btn-ability-terran-detectionconedebuff.dds"/>
         <EditorCategories value="Race:UED"/>
-        <HotkeyAlias value="ButtonUpgradeDrakkar"/>
     </CButton>
     <CButton id="ButtonUpgraideHurrakan">
         <Icon value="Assets\Textures\btn-ability-mengsk-medivac-igniteafterburners.dds"/>
         <EditorCategories value="Race:UED"/>
-        <HotkeyAlias value="ButtonUpgradeDrakkar"/>
+        <AlertIcon value="Assets\Textures\btn-ability-mengsk-medivac-igniteafterburners.dds"/>
     </CButton>
     <CButton id="ButtonHurrakanUED">
         <Icon value="Assets\Textures\btn-ability-mengsk-medivac-igniteafterburners.dds"/>

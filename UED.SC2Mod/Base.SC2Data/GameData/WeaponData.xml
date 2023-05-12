@@ -389,7 +389,8 @@
         <MinScanRange value="10.5"/>
         <Range value="10"/>
         <Period value="1.75"/>
-        <Effect value="TyphoonRockets"/>
+        <Effect value="UEDTyphoonRocketsAll"/>
+        <DamagePoint value="0.08"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="PeneemundeWeapon">
         <EditorCategories value="Race:UED"/>
@@ -437,7 +438,7 @@
         <MinScanRange value="10.5"/>
         <Range value="10"/>
         <Period value="2.45"/>
-        <Effect value="TyphoonRockets"/>
+        <Effect value="UEDTyphoonRocketsAll"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="UEDGoliathGunGround">
         <EditorCategories value="Race:UED"/>

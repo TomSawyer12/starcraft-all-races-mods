@@ -23,7 +23,7 @@
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-hornerhan-raven-analyzetarget.dds"/>
         <EditorCategories value="AbilityorEffectType:Units,Race:UED"/>
-        <Duration value="0.1"/>
+        <Duration value="0.5"/>
         <Modification>
             <AbilClassDisableArray index="CAbilAttack" value="1"/>
         </Modification>
@@ -104,7 +104,7 @@
         <EditorCategories value="AbilityorEffectType:Units,Race:UED"/>
         <Duration value="2.8"/>
     </CBehaviorBuff>
-    <CBehaviorBuff id="AlgoritmPenemundeOutAttackCan">
+    <CBehaviorBuff id="AlgoritmPenemundeSpalshMos">
         <Alignment value="Negative"/>
         <InfoFlags index="Hidden" value="1"/>
         <InfoIcon value="Assets\Textures\btn-ability-hornerhan-raven-analyzetarget.dds"/>
@@ -405,6 +405,13 @@
         <Modification>
             <ModifyFlags index="DisableWeapons" value="1"/>
         </Modification>
+    </CBehaviorBuff>
+    <CBehaviorBuff id="PenemundeAlgoritmContinueAttack" parent="Detector">
+        <InfoFlags index="Hidden" value="1"/>
+        <InfoIcon value="Assets\Textures\btn-ability-hornerhan-raven-analyzetarget.dds"/>
+        <BehaviorCategories index="User14" value="0"/>
+        <EditorCategories value="Race:UED,AbilityorEffectType:Units"/>
+        <Duration value="3"/>
     </CBehaviorBuff>
     <CBehaviorBuff id="UEDResurrectionShields">
         <Alignment value="Positive"/>

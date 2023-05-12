@@ -353,7 +353,7 @@ Button/Tooltip/Marine2=Highly-trained Directorate infantry.<n/><n/><c val="#Colo
 Button/Tooltip/MilitaryResearchStation=Advanced upgrade structure. Unlocks various equipment authorizations for spacecraft & vehicles.<n/><n/><c val="ffff8a">Enables:</c><n/>- Peenemunde MRLS<n/>- Citadel AAT
 Button/Tooltip/MissileTower=Anti-air defensive structure.<n/><n/><c val="FFE303">Detector<n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/MorphtoObserverSiege2=Transforms the Observer to Surveillance Mode. The Observer gains <d ref="(Unit,ObserverSiegeMode,Sight/Unit,Observer,Sight-1)*100"/>% wider vision, but loses the ability to move.
-Button/Tooltip/MunitionsFactory=Vehicle support structure. Provides equipment authorizations for basic vehicles.<n/><n/><c val="ffff8a">Enables:</c><n/>- Crimson Eyes<n/>- Sentinel MBT<n/>- Typhoon LMT
+Button/Tooltip/MunitionsFactory=Vehicle support structure. Provides equipment authorizations for basic vehicles.<n/><n/><c val="ffff8a">Enables:</c><n/>- Crimson Eyes<n/>- Napoleon MBT<n/>- Typhoon LMT
 Button/Tooltip/MutatorReanimate=Releases a nanoswarm into the targeted unit's organism, resurrecting it with partial health and loss of energy, imposing a temporary shield. Can only be used on incapacitated infantry UED.
 Button/Tooltip/Napoleon=Versatile main battle tank, effective against armored targets.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
 Button/Tooltip/OnwardComrades=Inspire nearby units to fight by temporarily increasing their movement speed and attack power.
@@ -386,7 +386,7 @@ Button/Tooltip/SupplyDepot2=Provides logistics.<n/>Logistics capacity allows you
 Button/Tooltip/SupportShuttle=Combat support ship. Can use Cloaking Drone that temporarily cloaks the targeted unit, and is capable of deploying Psionic Suppression Field that prevents any abilities in the area from being cast.<n/><n/><c val="FFE303">Detector</c>
 Button/Tooltip/SuppressionTower=Anti-ground defensive structure, effective against lightly-armored targets.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/TachyonRelay=Long-range communications array. Provides equipment authorizations for the Directorate Navy assets.<n/><n/><c val="ffff8a">Enables:</c><n/>- Honorguards
-Button/Tooltip/TacticsAcademy=Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Taranises<n/>- Lazaruses<n/>- Drakkar APCs<n/>- Defense Towers
+Button/Tooltip/TacticsAcademy=Infantry support structure. Provides equipment authorizations and unlocks research projects that enhance all infantry units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Taranises<n/>- Lazaruses<n/>- Drakkar APCs<n/>- Goliath combat robots<n/>- Defense Towers
 Button/Tooltip/Taranis=Heavily-armed infantry, effective against clustered targets.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/TeleportationNode=Universal production structure for the Directorate army, capable of deploying any combat units.<n/><n/><c val="ffff8a">Enables:</c><n/>- Garmrs<n/>- Strike Troopers<n/>- Enrichment Towers
 Button/Tooltip/TransportShuttle=Large transport ship, capable of transporting big squads of infantry & armored vehicles.
@@ -406,8 +406,8 @@ Button/Tooltip/UEDButtonPenemundeCanAttack=Allow firing in normal mode.
 Button/Tooltip/UEDButtonStopAttackPenemunde=Orders the selected troops to attack strictly different targets and interrupt the attack immediately after the shot, moving on to the next task.
 Button/Tooltip/UEDButtonUpgraideGoliath=Changing the technical process of manufacturing cartridges for the universal machine gun H11 the <c val="FFFF80">Goliath combat robot</c> allows you to get a +3 bonus on armored targets.
 Button/Tooltip/UEDButtonUpgraidePackageOfMedicines=After being resurrected <c val="FFFF80"> by Lazarus</c>, the infantryman receives 100% health and energy loss of only 50% of the maximum reserve, but the reserve of shields is reduced to 10.
-Button/Tooltip/UEDGoliath=Universal combat robot, effective against aerial targets.<n/><n/><c val="FFFF8A">Can attack ground and air targets.</c>
 Button/Tooltip/UEDSalvoFiringPatterns=Area damage to enemy troops increased to 100%.
+Button/Tooltip/UEDUnitGoliath=Universal combat robot, effective against aerial targets.<n/><n/><c val="FFFF8A">Can attack ground and air targets.</c>
 Button/Tooltip/UEDVehicalsLevel1=Increases <c val="ffff8a">damage</c> from weapons of all equipment and all starships of the Directorate.
 Button/Tooltip/UEDVehicalsLevel2=Increases <c val="ffff8a">damage</c> from weapons of all equipment and all starships of the Directorate.
 Button/Tooltip/UEDVehicalsLevel3=Increases <c val="ffff8a">damage</c> from weapons of all equipment and all starships of the Directorate.
@@ -807,8 +807,8 @@ Unit/Name/TransportShuttle=Transport Shuttle
 Unit/Name/Typhoon=Typhoon LMT
 Unit/Name/TyphoonWeapon=Typhoon
 Unit/Name/UEDDropPod=UEDDrop-Pod
-Unit/Name/UEDGoliath=Goliath combat robot
 Unit/Name/UEDTossGrenadeWeapon=UEDTossGrenadeWeapon
+Unit/Name/UEDUnitGoliath=Goliath combat robot
 Unit/Name/Valkyrie=Valkyrie
 Unit/Name/ValkyrieDamageMissile=Valkyrie Damage Missile
 Unit/Name/VespenePurificationPlant=Vespene Purification Plant

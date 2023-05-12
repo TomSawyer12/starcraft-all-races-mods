@@ -295,7 +295,7 @@
         <CmdButtonArray index="Off" DefaultButtonFace="UEDButtonPenemundeCanAttack"/>
         <Flags index="Toggle" value="1"/>
         <Flags index="Transient" value="1"/>
-        <BehaviorArray value="AlgoritmPenemundeOutAttackCan"/>
+        <BehaviorArray value="AlgoritmPenemundeSpalshMos"/>
     </CAbilBehavior>
     <CAbilEffectTarget id="UEDTossGrenade">
         <Alignment value="Negative"/>
@@ -931,11 +931,11 @@
             <Button DefaultButtonFace="BuildStrikeTrooper"/>
             <Unit value="StrikeTrooper"/>
         </InfoArray>
-        <InfoArray index="Train2" Time="45">
+        <InfoArray index="Train2" Time="50">
             <Button DefaultButtonFace="BuildStrikefighter" Requirements="HaveStarshipMaintenancePlant"/>
             <Unit value="Strikefighter"/>
         </InfoArray>
-        <InfoArray index="Train3" Time="55">
+        <InfoArray index="Train3" Time="50">
             <Button DefaultButtonFace="BuildValkyrie" Requirements="HaveStarshipMaintenancePlant"/>
             <Unit value="Valkyrie"/>
         </InfoArray>
@@ -959,7 +959,7 @@
             <Button DefaultButtonFace="DesolatorMissileTank" Requirements="HaveMunitionsFactory"/>
             <Unit value="Typhoon"/>
         </InfoArray>
-        <InfoArray index="Train9" Time="40">
+        <InfoArray index="Train9" Time="38">
             <Button DefaultButtonFace="TransportShuttle" Requirements="HaveStarshipMaintenancePlant"/>
             <Unit value="TransportShuttle"/>
         </InfoArray>
@@ -967,7 +967,7 @@
             <Button DefaultButtonFace="DrakkarAPC" Requirements="HaveTacticsAcademy"/>
             <Unit value="DrakkarAPC"/>
         </InfoArray>
-        <InfoArray index="Train11" Time="50">
+        <InfoArray index="Train11" Time="55">
             <Button DefaultButtonFace="PeenemundeMRLS" Requirements="HaveMilitaryResearchStation"/>
             <Unit value="PeenemundeMRLS"/>
         </InfoArray>
@@ -983,7 +983,7 @@
             <Button DefaultButtonFace="PoliticalAdvisor" Requirements="HaveFieldBureau"/>
             <Unit value="PoliticalAdvisor"/>
         </InfoArray>
-        <InfoArray index="Train15" Time="50">
+        <InfoArray index="Train15" Time="45">
             <Button DefaultButtonFace="SupporttShuttle" Requirements="HaveStarshipMaintenancePlant"/>
             <Unit value="SupportShuttle"/>
         </InfoArray>
@@ -1000,8 +1000,8 @@
             <Unit value="BeaconUED"/>
         </InfoArray>
         <InfoArray index="Train19" Time="40">
-            <Button DefaultButtonFace="UEDButtonGoliath"/>
-            <Unit value="UEDGoliath"/>
+            <Button DefaultButtonFace="UEDButtonGoliath" Requirements="HaveTacticsAcademy"/>
+            <Unit value="UEDUnitGoliath"/>
         </InfoArray>
     </CAbilTrain>
     <CAbilEffectTarget id="ProjectedGravityShield">

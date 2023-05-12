@@ -5,6 +5,11 @@
         <Multiplier value="3"/>
         <Base value="UEDLaunchMissleGoliath"/>
     </CAttachMethodPattern>
+    <CAttachMethodPattern id="UEDAMPatternTyphoon">
+        <Keyword value="Weapon"/>
+        <Base value="UEDTyphoonLM"/>
+        <Multiplier value="2"/>
+    </CAttachMethodPattern>
     <CAttachMethodPattern id="UEDAMPatternStrikeFighter">
         <Keyword value="Weapon"/>
         <Base value="LanzerTorpedoesLM2"/>
