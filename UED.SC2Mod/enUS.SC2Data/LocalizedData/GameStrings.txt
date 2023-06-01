@@ -256,11 +256,11 @@ Button/Name/UEDButtonCitadelUpgrade=Authorization request: Magnetic wave acceler
 Button/Name/UEDButtonCrimsonEyePenemunde=Ballistic missile guidance
 Button/Name/UEDButtonGoliath=Request Goliath Combat Robot
 Button/Name/UEDButtonGoliathPassive=Armor-piercing cartridges
-Button/Name/UEDButtonPackageOfMedicines=Package of medicines
+Button/Name/UEDButtonLazarusbattery=Lazarus Battery
 Button/Name/UEDButtonPenemundeCanAttack=Standard attack
 Button/Name/UEDButtonStopAttackPenemunde=Scattered attack
 Button/Name/UEDButtonUpgraideGoliath=Authorization request: Armor-piercing cartridges
-Button/Name/UEDButtonUpgraidePackageOfMedicines=Authorization request: Package of medicines
+Button/Name/UEDButtonUpgraideLazarusbattery=Authorization request: Lazarus Battery
 Button/Name/UEDSalvoFiringPatterns=Salvo Firing Patterns
 Button/Name/UEDVehicalsLevel1=Research Heavy Weaponry Targeting Adjustment, Level 1
 Button/Name/UEDVehicalsLevel2=Research Heavy Weaponry Targeting Adjustment, Level 2
@@ -354,9 +354,9 @@ Button/Tooltip/MilitaryResearchStation=Advanced upgrade structure. Unlocks vario
 Button/Tooltip/MissileTower=Anti-air defensive structure.<n/><n/><c val="FFE303">Detector<n/><c val="#ColorAttackInfo">Can attack air units.</c>
 Button/Tooltip/MorphtoObserverSiege2=Transforms the Observer to Surveillance Mode. The Observer gains <d ref="(Unit,ObserverSiegeMode,Sight/Unit,Observer,Sight-1)*100"/>% wider vision, but loses the ability to move.
 Button/Tooltip/MunitionsFactory=Vehicle support structure. Provides equipment authorizations for basic vehicles.<n/><n/><c val="ffff8a">Enables:</c><n/>- Crimson Eyes<n/>- Napoleon MBT<n/>- Typhoon LMT
-Button/Tooltip/MutatorReanimate=Releases a nanoswarm into the targeted unit's organism, resurrecting it with partial health and loss of energy, imposing a temporary shield. Can only be used on incapacitated infantry UED.
+Button/Tooltip/MutatorReanimate=Releases a nanoswarm into the targeted unit's organism, resurrecting him with full health and the loss of half the energy from the maximum, imposing a temporary shield. Can only be used on incapacitated infantry UED and no more than 1 time in 21 seconds.
 Button/Tooltip/Napoleon=Versatile main battle tank, effective against armored targets.<n/><n/><c val="FFFF8A">Can attack ground units.</c>
-Button/Tooltip/OnwardComrades=Inspire nearby units to fight by temporarily increasing their movement speed and attack power.
+Button/Tooltip/OnwardComrades=Inspire nearby units to fight by temporarily increasing their attack speed, movement, and attack power.
 Button/Tooltip/OperationHeadquarters=Primary structure. Used to receive gathered resources. Capable of deploying all UED structures aside from additional Operation Headquarters.<n/><n/><c val="ffff8a">Enables:</c><n/>- Salvagers<n/>- Beacons
 Button/Tooltip/OpticalFlare=Shoot a powerful light grenade. In the field of action, all enemy targets will be deprived of the function of invisibility, detector and vision for 8.5 seconds. Opens the terrain.
 Button/Tooltip/PeenemundeMRLS=Long-range artillery. Launches missiles that deal devastating damage in the target area.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
@@ -380,7 +380,7 @@ Button/Tooltip/SongoftheDead=Launches an ATGM at the target, causing <d ref="Eff
 Button/Tooltip/SpareRifleBatteries=Enables an additional attack pattern for <c val="ffff8a">Strike Troopers</c>, increasing their combat range.
 Button/Tooltip/StarWind=Basic resource gathering unit for the Directorate army.<n/><n/><c val="ffff8a">Can attack ground units.</c>
 Button/Tooltip/StarshipMaintenancePlant=Starship support structure. Provides equipment authorizations for basic vessels.<n/><n/><c val="ffff8a">Enables:</c><n/>- Crimson Eyes<n/>- Strikefighters<n/>- Valkyries<n/>- Transport Shuttles<n/>- Support Shuttles
-Button/Tooltip/StrikeGrenade=Throw a grenade that explodes on contact. Deals 12 damage and slows attack speed by 20% for 7 seconds.
+Button/Tooltip/StrikeGrenade=Throw a grenade that explodes on contact. Deals <d ref="Effect,BonesTossGrenadeDamage,Amount"/> damage and slows attack speed by 20% for 7 seconds.
 Button/Tooltip/Strikefighter=Armored multirole fighter.<n/><n/><c val="#ColorAttackInfo">Can attack ground and air units.</c>
 Button/Tooltip/SupplyDepot2=Provides logistics.<n/>Logistics capacity allows you to create more units.<n/>Additionally, any units and structures near an Arsenal will slowly regenerate health.
 Button/Tooltip/SupportShuttle=Combat support ship. Can use Cloaking Drone that temporarily cloaks the targeted unit, and is capable of deploying Psionic Suppression Field that prevents any abilities in the area from being cast.<n/><n/><c val="FFE303">Detector</c>
@@ -395,17 +395,17 @@ Button/Tooltip/TransportShuttleUnloadAll=Unloads all units.
 Button/Tooltip/Typhoon=Artillery vehicle. Supports the offensive with devastating missile salvos.<n/><n/><c val="#ColorAttackInfo">Can attack ground units.</c>
 Button/Tooltip/UEDBuildAdvanced=Request advanced structures from the orbiting fleet.
 Button/Tooltip/UEDBuildEazy=Request basic structures from the orbiting fleet.
-Button/Tooltip/UEDButtonAmmunitionDepot=Allows you to store ammunition for a Strikefighter and issue it as needed.
+Button/Tooltip/UEDButtonAmmunitionDepot=Allows you to store ammunition for a Strikefighters and issue it as needed.
 Button/Tooltip/UEDButtonCitadelAbility=The device temporarily creates strong magnetic fields that immobilizes the tank, but allows you to fire faster with a longer range and the effect of buckshot behind standing targets.
 Button/Tooltip/UEDButtonCitadelUpgrade=A special magnetic device will not deprive for a long time <c val="FFFF80">Citadel AAT</c> of the ability to move, but it will provide shooting 3.5 times faster and 3 units further with damage behind standing targets.
 Button/Tooltip/UEDButtonCrimsonEyePenemunde=It helps to direct missiles to <c val="#ColorAttackInfo">Peenemunde MRLS </c> in a radius of 11 around itself at a huge distance.
 Button/Tooltip/UEDButtonGoliath=Universal combat robot, effective against aerial targets.<n/><n/><c val="FFFF8A">Can attack ground and air targets.</c>
 Button/Tooltip/UEDButtonGoliathPassive=Gives +3 bonus on ground armored targets.
-Button/Tooltip/UEDButtonPackageOfMedicines=When resurrecting, the target's health reserve is maximum, and energy losses are 50% of the maximum.
+Button/Tooltip/UEDButtonLazarusbattery=Gives +25 to the initial and +50 to the maximum energy.
 Button/Tooltip/UEDButtonPenemundeCanAttack=Allow firing in normal mode.
 Button/Tooltip/UEDButtonStopAttackPenemunde=Orders the selected troops to attack strictly different targets and interrupt the attack immediately after the shot, moving on to the next task.
 Button/Tooltip/UEDButtonUpgraideGoliath=Changing the technical process of manufacturing cartridges for the universal machine gun H11 the <c val="FFFF80">Goliath combat robot</c> allows you to get a +3 bonus on armored targets.
-Button/Tooltip/UEDButtonUpgraidePackageOfMedicines=After being resurrected <c val="FFFF80"> by Lazarus</c>, the infantryman receives 100% health and energy loss of only 50% of the maximum reserve, but the reserve of shields is reduced to 10.
+Button/Tooltip/UEDButtonUpgraideLazarusbattery=Gives <c val="FFFF80">Lazarus</c> +25 to the initial and +50 to the maximum energy.
 Button/Tooltip/UEDSalvoFiringPatterns=Area damage to enemy troops increased to 100%.
 Button/Tooltip/UEDUnitGoliath=Universal combat robot, effective against aerial targets.<n/><n/><c val="FFFF8A">Can attack ground and air targets.</c>
 Button/Tooltip/UEDVehicalsLevel1=Increases <c val="ffff8a">damage</c> from weapons of all equipment and all starships of the Directorate.
@@ -721,7 +721,7 @@ RequirementNode/Tooltip/CountUpgradePrototypePositronicWeaponryCompleteOnly37461
 RequirementNode/Tooltip/CountUpgradeSalvoFiringPatternCompleteOnly1107140307TechTreeCheat=Request authorization of multiple launch protocols in the ammunition factory.
 RequirementNode/Tooltip/CountUpgradeStimpackCompleteOnly80611996TechTreeCheat=Research Stimpack at the Barracks Tech Lab
 RequirementNode/Tooltip/CountUpgradeStrikeGrenadeCompleteOnly3906007869TechTreeCheat=Authorize Strike Grenades at the Field Buerau
-RequirementNode/Tooltip/CountUpgradeUEDPackageOfMedicinesCompleteOnly2135512371TechTreeCheat=Request authorization for a package of medicines at the field office.
+RequirementNode/Tooltip/CountUpgradeUEDLazarusbatteryCompleteOnly1851522583TechTreeCheat=Request authorization for a Lazarus Battery at the field office.
 RequirementNode/Tooltip/CountUpgradeUEDSpeedProjectileCompleteOnly248930777TechTreeCheat=Authorize a speed projectile in the ammunition factory.
 RequirementNode/Tooltip/CountUpgradeUEDUpgradeGoliathCompleteOnly3730296824TechTreeCheat=Request armor-piercing cartridges from the ammunition factory.
 RequirementNode/Tooltip/CountUpgradeUpgradeAbilityCitadelUEDCompleteOnly4231854201TechTreeCheat=Request authorization for the magnetic wave accelerator at the military research station.
@@ -738,7 +738,7 @@ RequirementNode/Tooltip/CountUpgradeUpgraideDrakkarCompleteOnly658754647TechTree
 RequirementNode/Tooltip/Or3028896835CountUnitMunitionsFactoryCompleteOnly242926954TechTreeCheatCountUnitStarshipMaintenancePlantCompleteOnly971994468TechTreeCheat=Munitions Factory or Starship Maintenance
 RequirementNode/Tooltip/Or3319937022CountUnitArsenalCompleteOnly774868845TechTreeCheatCountUnitMissileTowerCompleteOnlyTechTreeCheatCountUnitHeavyTowerCompleteOnlyTechTreeCheatCountUnitSuppressionTowerCompleteOnlyTechTreeCheatCountUnitInfusionTowerCompleteOnlyTechTreeCheat=Arsenal or Any Tower
 Reward/Name/ued=UED
-UEDErrorChangeGunFly=A starship maintenance plant is needed nearby
+UEDErrorChangeGunFly=Nearby you need a Starship maintenance Plant or an Operations Headquarters
 UEDErrorGraviShields=The gravity shield has already been applied.
 UI/Building=Building
 UI/Mutating=Morph
@@ -840,6 +840,7 @@ Upgrade/Name/UEDArmorLightLevel2=Light armor, level 2
 Upgrade/Name/UEDArmorLightLevel3=Light armor, level 3
 Upgrade/Name/UEDBannerUpgrade=UED Banner upgrade
 Upgrade/Name/UEDCommander=UED Commander
+Upgrade/Name/UEDLazarusbattery=Lazarus Battery
 Upgrade/Name/UEDOrbitalConstruction=UEDOrbitalConstruction
 Upgrade/Name/UEDPackageOfMedicines=Package of medicines
 Upgrade/Name/UEDSpeedProjectile=Speed projectile
@@ -892,13 +893,14 @@ Weapon/Name/Type769BattleRifle2=Type-769 Battle Rifle
 Weapon/Name/TyphoonWeapon=T-15 Guided Missiles
 Weapon/Name/TyphoonWeaponAIR=T-21 Guided missiles
 Weapon/Name/TyphoonWeaponGrond=T-15 Guided missiles
-Weapon/Name/UEDGoliathGunAir=Surface-to-air missiles
+Weapon/Name/UEDGoliathGunAir=Halo Rockets
 Weapon/Name/UEDGoliathGunGround=Universal machine gun H11
 Weapon/Name/UEDPenemundeGunClose=Precision strike
 Weapon/Name/UEDPenemundeGunRange=Ballistic missile "Retaliation"
 Weapon/Tip/BoomerangMissileLaunchers=
 Weapon/Tip/Cremator=
 Weapon/Tip/HALOMissiles=<c val="#ColorAttackInfo">Deals area damage<n/>within a radius of up to 1.5
+Weapon/Tip/HALOMissiles2=<c val="#ColorAttackInfo">Deals damage to an area within a radius of 0.8.
 Weapon/Tip/HighPoweredShot=<c val="#ColorAttackInfo">Minimum Range: 5
 Weapon/Tip/TachyonLaserCannons=
 Weapon/Tip/TyphoonWeaponGrond=<c val="#ColorAttackInfo">Deals damage to an area<n/>within a radius 0.8.

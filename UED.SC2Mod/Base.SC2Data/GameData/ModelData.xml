@@ -1935,11 +1935,11 @@
     </CModel>
     <CModel id="InfusionTower" parent="SupplyDepotBase">
         <Model value="Assets\Structures\UED_Hive_Mind_Emulator\UED_HiveMindEmulator_V1.m3"/>
-        <SelectionRadius value="1.500000"/>
-        <ShadowRadius value="1.500000"/>
+        <EditorCategories value="Race:UED"/>
         <ScaleMax value="0.650000,0.650000,0.650000"/>
         <ScaleMin value="0.650000,0.650000,0.650000"/>
-        <EditorCategories value="Race:UED"/>
+        <SelectionRadius value="1.500000"/>
+        <ShadowRadius value="1.500000"/>
     </CModel>
     <CModel id="InfusionTowerDeath" parent="SupplyDepotDeathBase">
         <Model value="Assets\Doodads\DOM_Explosion_Med\DOM_Explosion_Med.m3"/>

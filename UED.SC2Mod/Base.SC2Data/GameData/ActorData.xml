@@ -2929,7 +2929,7 @@
         <On Terms="AbilMorph.*.Finish; MorphFrom Arsenal; MorphTo MissileTower" Send="Create"/>
     </CActorUnit>
     <CActorAction id="MissileTowerAttack" parent="GenericAttack" effectImpact="LongboltMissileU2" effectLaunch="LongboltMissileLM2">
-        <LaunchAttachQuery Methods="AMPatternMissileTurret"/>
+        <LaunchAttachQuery Methods="UEDAMPatternTurret"/>
         <LaunchAssets Sound="MissileTurret_AttackLaunch2"/>
         <ImpactAttachQuery Methods="AMFilterTarget AMRandomUniform"/>
         <ImpactMap index="None" Model="MissileTurretAttackImpact2" Sound="MissileTurret_AttackImpact2"/>

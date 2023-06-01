@@ -128,6 +128,7 @@ Button/Hotkey/UEDButtonPackageOfMedicines=
 Button/Hotkey/UEDButtonPenemundeCanAttack=G
 Button/Hotkey/UEDButtonStopAttackPenemunde=F
 Button/Hotkey/UEDButtonUpgraideGoliath=R
+Button/Hotkey/UEDButtonUpgraideLazarusbattery=E
 Button/Hotkey/UEDButtonUpgraidePackageOfMedicines=E
 Button/Hotkey/UEDSalvoFiringPatterns=S
 Button/Hotkey/UEDVehicalsLevel1=V

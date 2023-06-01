@@ -31,9 +31,9 @@
         <NodeArray index="Use" Link="AndCountUpgradeUEDArmorLightLevel2CompleteOnlyCountUnitFieldBureauCompleteOnly"/>
         <NodeArray index="Show" Link="EqCountUpgradeUEDArmorLightLevel3QueuedOrBetter0"/>
     </CRequirement>
-    <CRequirement id="LearnPackageOfMedicines">
+    <CRequirement id="LearnLazarusBattary">
         <EditorCategories value="Race:UED,TechType:Ability"/>
-        <NodeArray index="Show" Link="AndNotCountUpgradeUEDPackageOfMedicinesQueuedOrBetter"/>
+        <NodeArray index="Show" Link="AndNotCountUpgradeUEDLazarusbatteryQueuedOrBetter"/>
     </CRequirement>
     <CRequirement id="LearnNapoleonAbility">
         <EditorCategories value="Race:UED,TechType:Ability"/>
@@ -342,9 +342,9 @@
         <EditorCategories value="Race:UED,TechType:Ability"/>
         <NodeArray index="Use" Link="CountUpgradeUpgradeEnergeSupportShutlCompleteOnly772568896TechTreeCheat"/>
     </CRequirement>
-    <CRequirement id="UsePackageOMedicines">
+    <CRequirement id="UseLazarusBattary">
         <EditorCategories value="Race:UED,TechType:Ability"/>
-        <NodeArray index="Use" Link="CountUpgradeUEDPackageOfMedicinesCompleteOnly2135512371TechTreeCheat"/>
+        <NodeArray index="Use" Link="CountUpgradeUEDLazarusbatteryCompleteOnly1851522583TechTreeCheat"/>
     </CRequirement>
     <CRequirement id="UseUEDSpeedStrikeFighter">
         <EditorCategories value="Race:UED,TechType:Ability"/>

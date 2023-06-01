@@ -208,7 +208,7 @@
         <Icon value="Assets\weapon-tank-icon-upgrade-0.dds"/>
         <DisplayEffect value="BacklashRocketsU2"/>
         <DisplayAttackCount value="4"/>
-        <TargetFilters value="Ground,Visible;Air,Missile,Stasis,Dead,Hidden,Invulnerable"/>
+        <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
         <MinScanRange value="6.5"/>
         <Range value="6"/>
         <Marker>
@@ -446,11 +446,12 @@
         <DisplayEffect value="UEDDamageGoliathGround"/>
         <DisplayAttackCount value="2"/>
         <TargetFilters value="Ground,Visible;Missile,Stasis,Dead,Hidden,Invulnerable"/>
-        <MinScanRange value="6.5"/>
+        <MinScanRange value="7.5"/>
         <Range value="6"/>
         <Arc value="0.9997"/>
         <Period value="1.15"/>
         <Effect value="EffectPeriodGoliathAttackGround"/>
+        <DamagePoint value="0.08"/>
     </CWeaponLegacy>
     <CWeaponLegacy id="UEDGoliathGunAir">
         <EditorCategories value="Race:UED"/>
@@ -462,6 +463,7 @@
         <Range value="7"/>
         <Arc value="0.9997"/>
         <Period value="2.25"/>
+        <DamagePoint value="0.1"/>
         <Effect value="EffectPeriodGoliathAttackAir"/>
     </CWeaponLegacy>
 </Catalog>

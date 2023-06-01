@@ -281,7 +281,7 @@
     <CEffectCreatePersistent id="EffectPeriodHelpAnimacionPenemunde">
         <EditorCategories value="Race:UED"/>
         <ExpireEffect value="SetLauncMissilePenemunde"/>
-        <PeriodCount value="28"/>
+        <PeriodCount value="21"/>
         <PeriodicPeriodArray value="0.1"/>
         <Flags index="Channeled" value="1"/>
         <InitialEffect value="ApplyAlgoritmContinueAttackPenemunde"/>
@@ -377,12 +377,6 @@
         <InitialEffect value="ApplyAlgoritmAttackRangePenemunde"/>
         <FinalEffect value="EffectPeriodHelpAnimacionPenemunde"/>
     </CEffectCreatePersistent>
-    <CEffectModifyUnit id="UEDResurrectionLiveBegin">
-        <EditorCategories value="Race:UED"/>
-        <VitalArray index="Life">
-            <ChangeFraction value="1"/>
-        </VitalArray>
-    </CEffectModifyUnit>
     <CEffectDamage id="KillUnitDrakkar">
         <ValidatorArray value="CasterIsDead"/>
         <ValidatorArray value="IsHiddenSelf"/>
@@ -648,8 +642,7 @@
         <EffectArray value="ApplyAlgoritmResurected"/>
         <EffectArray value="UEDDeleteAlgoritmDie"/>
         <EffectArray value="ApplyUEDShieldsResurrection"/>
-        <EffectArray value="UEDResurrectionLiveBegin"/>
-        <EffectArray value="UEDResurrectionLiveEnd"/>
+        <EffectArray value="UEDResurrectionLive"/>
     </CEffectSet>
     <CEffectSet id="SetTowerPlace">
         <EditorCategories value="Race:UED"/>
@@ -721,7 +714,7 @@
         <EditorCategories value="Race:UED"/>
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
-        <Amount value="12"/>
+        <Amount value="8"/>
     </CEffectDamage>
     <CEffectCreatePersistent id="BonesTossGrenadeDelay">
         <EditorCategories value="Race:UED"/>
@@ -1066,13 +1059,13 @@
         <MorphFlags index="IgnoreMorphing" value="1"/>
         <MorphUnit value="Garmr"/>
     </CEffectMorph>
-    <CEffectModifyUnit id="UEDResurrectionLiveEnd">
+    <CEffectModifyUnit id="UEDResurrectionLive">
         <EditorCategories value="Race:UED"/>
         <VitalArray index="Life">
-            <ChangeFraction value="-0.5"/>
+            <ChangeFraction value="1"/>
         </VitalArray>
         <VitalArray index="Energy">
-            <ChangeFraction value="-1"/>
+            <ChangeFraction value="-0.5"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectApplyBehavior id="VisionBuffTrooperDownApplyBehavior">
@@ -1377,7 +1370,7 @@
         <ResponseFlags index="Acquire" value="1"/>
         <ResponseFlags index="Flee" value="1"/>
         <Kind value="Splash"/>
-        <Amount value="7"/>
+        <Amount value="10"/>
         <Death value="Squish"/>
         <AreaArray Radius="1.25" Fraction="1"/>
         <ExcludeArray Value="Target"/>

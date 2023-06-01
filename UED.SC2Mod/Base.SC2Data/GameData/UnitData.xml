@@ -403,12 +403,12 @@
         <Attributes index="Armored" value="1"/>
         <Attributes index="Mechanical" value="1"/>
         <Attributes index="Robotic" value="1"/>
-        <LifeStart value="125"/>
-        <LifeMax value="125"/>
+        <LifeStart value="140"/>
+        <LifeMax value="140"/>
         <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/UEDArmor"/>
         <LifeArmorTip value="Unit/LifeArmorName/UEDArmor"/>
-        <Speed value="2.75"/>
+        <Speed value="3"/>
         <Acceleration value="1000"/>
         <Sight value="9"/>
         <Food value="-2"/>
@@ -750,7 +750,7 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="AttackGhost" Type="AbilCmd" AbilCmd="attackUED,Execute" Row="0" Column="4"/>
             <LayoutButtons Face="MutatorReanimate" Type="AbilCmd" AbilCmd="LazarusDeviceAoE,Execute" Row="2" Column="0"/>
-            <LayoutButtons Face="UEDButtonPackageOfMedicines" Type="Passive" Requirements="UsePackageOMedicines" Row="1" Column="0"/>
+            <LayoutButtons Face="UEDButtonLazarusbattery" Type="Passive" Requirements="UseLazarusBattary" Row="1" Column="0"/>
         </CardLayouts>
         <Radius value="0.375"/>
         <SeparationRadius value="0.375"/>
@@ -1333,7 +1333,7 @@
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="moveUED,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="moveUED,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="CloakingDrone" Type="AbilCmd" AbilCmd="CloakingDrone,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="DeployPsionicSuppressionField" Type="AbilCmd" AbilCmd="PsionicSuppressionField,Execute" Row="2" Column="2"/>
             <LayoutButtons Face="ProjectedGravitySheild" Type="AbilCmd" AbilCmd="ProjectedGravityShield,Execute" Row="2" Column="1"/>
@@ -1427,7 +1427,7 @@
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="TransportShuttleLoad" Type="AbilCmd" AbilCmd="MedivacTransport2,Load" Row="2" Column="2"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="moveUED,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="TransportShuttleUnloadAll" Type="AbilCmd" AbilCmd="MedivacTransport2,UnloadAt" Row="2" Column="3"/>
             <LayoutButtons Face="DropArsenal" Type="AbilCmd" AbilCmd="DropArsenal,Build2" Row="2" Column="3"/>
             <LayoutButtons Face="DropHeavyTower" Type="AbilCmd" AbilCmd="DropHeavyTower,Build2" Row="2" Column="3"/>
@@ -1541,7 +1541,7 @@
         <LifeMax value="240"/>
         <LifeArmor value="1"/>
         <LifeArmorName value="Unit/LifeArmorName/UEDArmor"/>
-        <Speed value="2.5"/>
+        <Speed value="2.75"/>
         <Acceleration value="1000"/>
         <LateralAcceleration value="64"/>
         <TurningRate value="360"/>
@@ -1649,7 +1649,7 @@
             <LayoutButtons Face="MoveHoldPosition" Type="AbilCmd" AbilCmd="moveUED,HoldPos" Row="0" Column="2"/>
             <LayoutButtons Face="MovePatrol" Type="AbilCmd" AbilCmd="moveUED,Patrol" Row="0" Column="3"/>
             <LayoutButtons Face="Attack" Type="AbilCmd" AbilCmd="attack,Execute" Row="0" Column="4"/>
-            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="move,AcquireMove" Row="0" Column="4"/>
+            <LayoutButtons Face="AcquireMove" Type="AbilCmd" AbilCmd="moveUED,AcquireMove" Row="0" Column="4"/>
             <LayoutButtons Face="CrimsonEyeRepair" Type="AbilCmd" AbilCmd="CrimsonEyeRepair,Execute" Row="2" Column="0"/>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="RadarCrimsonEyeUED,Off" Row="2" Column="4"/>
             <LayoutButtons Face="ButtonDetectorCrimsonYea" Type="AbilCmd" AbilCmd="AbilitiDetection,Execute" Row="2" Column="1"/>
@@ -1959,7 +1959,7 @@
         <CargoSize value="2"/>
         <ScoreMake value="50"/>
         <ScoreKill value="50"/>
-        <ScoreResult value="Units"/>
+        <ScoreResult value="BuildOrder"/>
         <SubgroupPriority value="95"/>
         <MinimapRadius value="0.375"/>
         <EditorCategories value="ObjectType:Unit,ObjectFamily:Melee"/>
@@ -2223,7 +2223,7 @@
         <CardLayouts>
             <LayoutButtons Face="Cancel" Type="AbilCmd" AbilCmd="que5,CancelLast" Row="2" Column="4"/>
             <LayoutButtons Face="CancelBuilding" Type="AbilCmd" AbilCmd="BuildInProgress,Cancel" Row="2" Column="4"/>
-            <LayoutButtons Face="UEDButtonUpgraidePackageOfMedicines" Type="AbilCmd" AbilCmd="EngineeringBayResearch2,Research4" Row="0" Column="0"/>
+            <LayoutButtons Face="UEDButtonUpgraideLazarusbattery" Type="AbilCmd" AbilCmd="EngineeringBayResearch2,Research4" Row="0" Column="0"/>
             <LayoutButtons Face="AuthorizeStrikeGrenades" Type="AbilCmd" AbilCmd="EngineeringBayResearch2,Research1" Row="0" Column="1"/>
         </CardLayouts>
         <Radius value="1"/>
@@ -2501,6 +2501,7 @@
                 <Row value="2"/>
                 <Column value="0"/>
             </LayoutButtons>
+            <LayoutButtons Face="UEDButtonAmmunitionDepot" Type="Passive" Row="2" Column="0"/>
             <LayoutButtons>
                 <Face value="UEDBuildAdvanced"/>
                 <Type value="Submenu"/>
@@ -2813,6 +2814,7 @@
         <TauntDuration index="Cheer" value="5"/>
         <TauntDuration index="Dance" value="5"/>
         <BehaviorArray Link="UnitDeathPrevention"/>
+        <BehaviorArray Link="AlgoritmRedaktorStrikeTrooper"/>
     </CUnit>
     <CUnit id="InfusionTower">
         <DeathRevealRadius value="3"/>
@@ -2880,6 +2882,7 @@
         <EnergyStart value="100"/>
         <EnergyMax value="100"/>
         <EnergyRegenRate value="0.5625"/>
+        <WeaponArray Turret="MissileTower"/>
     </CUnit>
     <CUnit id="VikingFighterWeapon2" parent="MISSILE_HALFLIFE">
         <Race value="UED"/>

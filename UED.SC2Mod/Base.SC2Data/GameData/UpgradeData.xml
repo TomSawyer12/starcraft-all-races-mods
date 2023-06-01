@@ -100,15 +100,14 @@
         <AffectedUnitArray index="4" value="Garmr"/>
         <LeaderLevel value="3"/>
     </CUpgrade>
-    <CUpgrade id="UEDPackageOfMedicines" parent="Research">
-        <Icon value="Assets\Textures\btn-upgrade-swann-regenerativebiosteel.dds"/>
+    <CUpgrade id="UEDLazarusbattery" parent="Research">
+        <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
         <Alert value="ResearchComplete_ued"/>
         <Race value="UED"/>
         <ScoreAmount value="200"/>
         <ScoreResult value="BuildOrder"/>
-        <EffectArray Operation="Subtract" Reference="Behavior,UEDResurrectionShields,Modification.VitalMaxArray[Shields]" Value="15"/>
-        <EffectArray Reference="Effect,UEDResurrectionLiveEnd,VitalArray[Life].ChangeFraction" Value="0.5"/>
-        <EffectArray Reference="Effect,UEDResurrectionLiveEnd,VitalArray[Energy].ChangeFraction" Value="0.5"/>
+        <EffectArray Reference="Unit,Lazarus,EnergyMax" Value="50"/>
+        <EffectArray Reference="Unit,Lazarus,EnergyStart" Value="25"/>
         <EditorCategories value="Race:UED,UpgradeType:SpellResearch"/>
         <AffectedUnitArray value="Lazarus"/>
         <LeaderAlias value="UpgradeEnergeSupportShutl"/>
@@ -642,7 +641,6 @@
         <EffectArray Operation="Set" Reference="Weapon,UEDGoliathGunAir,Icon" Value="Assets\weapon-tank-icon-upgrade-2.dds"/>
         <EffectArray Reference="Weapon,UEDGoliathGunAir,Level" Value="1"/>
         <EffectArray Reference="Effect,UEDDamageGoliathAir,Amount" Value="1"/>
-        <EffectArray Reference="Effect,UEDDamageGoliathAir,AttributeBonus[Armored]" Value="1"/>
         <EffectArray Reference="Effect,UEDDamageGoliathGround,Amount" Value="1"/>
         <AffectedUnitArray index="0" value="CitadelAAT"/>
         <AffectedUnitArray index="1" value="CrimsonEye"/>
@@ -717,7 +715,6 @@
         <EffectArray Reference="Weapon,UEDGoliathGunGround,Level" Value="1"/>
         <EffectArray Reference="Weapon,UEDGoliathGunAir,Level" Value="1"/>
         <EffectArray Operation="Set" Reference="Weapon,UEDGoliathGunAir,Icon" Value="Assets\weapon-tank-icon-upgrade-3.dds"/>
-        <EffectArray Reference="Effect,UEDDamageGoliathAir,AttributeBonus[Armored]" Value="1"/>
         <EffectArray Reference="Effect,UEDDamageGoliathAir,Amount" Value="1"/>
         <EffectArray Reference="Effect,UEDDamageGoliathGround,Amount" Value="1"/>
         <EditorCategories value="Race:UED,UpgradeType:AttackBonus"/>
@@ -830,7 +827,6 @@
         <EffectArray Reference="Weapon,UEDGoliathGunAir,Level" Value="1"/>
         <EffectArray Reference="Effect,UEDDamageGoliathGround,Amount" Value="1"/>
         <EffectArray Reference="Effect,UEDDamageGoliathAir,Amount" Value="1"/>
-        <EffectArray Reference="Effect,UEDDamageGoliathAir,AttributeBonus[Armored]" Value="1"/>
         <AffectedUnitArray index="0" value="CitadelAAT"/>
         <AffectedUnitArray index="1" value="Typhoon"/>
         <AffectedUnitArray index="2" value="HonorguardCruiser"/>

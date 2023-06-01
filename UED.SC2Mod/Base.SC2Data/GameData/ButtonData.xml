@@ -88,9 +88,9 @@
         <EditorCategories value="Race:UED"/>
         <TintRacially value="1"/>
     </CButton>
-    <CButton id="UEDButtonUpgraidePackageOfMedicines">
-        <Icon value="Assets\Textures\btn-upgrade-swann-regenerativebiosteel.dds"/>
-        <AlertIcon value="Assets\Textures\btn-upgrade-swann-regenerativebiosteel.dds"/>
+    <CButton id="UEDButtonUpgraideLazarusbattery">
+        <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
         <EditorCategories value="Race:UED"/>
     </CButton>
     <CButton id="ButtonDrakkarFastMove">
@@ -105,9 +105,9 @@
         <TintRacially value="1"/>
         <Universal value="1"/>
     </CButton>
-    <CButton id="UEDButtonPackageOfMedicines">
-        <Icon value="Assets\Textures\btn-upgrade-swann-regenerativebiosteel.dds"/>
-        <AlertIcon value="Assets\Textures\btn-upgrade-swann-regenerativebiosteel.dds"/>
+    <CButton id="UEDButtonLazarusbattery">
+        <Icon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-upgrade-terran-behemothreactor.dds"/>
         <EditorCategories value="Race:UED"/>
     </CButton>
     <CButton id="UEDButtonUpgraideGoliath">
@@ -151,7 +151,6 @@
         <Icon value="Assets\Textures\btn-command-stop.dds"/>
         <EditorCategories value="Race:UED"/>
         <TintRacially value="1"/>
-        <HotkeyAlias value="CloakingDrone"/>
     </CButton>
     <CButton id="ButtonTowerMiningVkl">
         <Icon value="Assets\Textures\btn-techupgrade-terran-ripwavemissiles.dds"/>

@@ -172,7 +172,7 @@
         <EditorCategories value="Race:UED,AbilityorEffectType:Units"/>
         <Effect index="0" value="ApplyAlgoritmSpeedStrikeFighter"/>
         <Cost>
-            <Cooldown TimeUse="18"/>
+            <Cooldown TimeUse="15"/>
         </Cost>
         <CmdButtonArray index="Execute" DefaultButtonFace="ButtonStrikeFighterSpeed" Requirements="UseUEDSpeedStrikeFighter"/>
         <Flags index="Transient" value="1"/>
@@ -625,10 +625,10 @@
             <Resource index="Vespene" value="150"/>
             <Button DefaultButtonFace="AuthorizeOpticalFlare" Requirements="LearnOpticalFlare"/>
         </InfoArray>
-        <InfoArray index="Research4" Time="120" Upgrade="UEDPackageOfMedicines">
+        <InfoArray index="Research4" Time="120" Upgrade="UEDLazarusbattery">
             <Resource index="Minerals" value="150"/>
             <Resource index="Vespene" value="150"/>
-            <Button DefaultButtonFace="UEDButtonUpgraidePackageOfMedicines" Requirements="LearnPackageOfMedicines"/>
+            <Button DefaultButtonFace="UEDButtonUpgraideLazarusbattery" Requirements="LearnLazarusBattary"/>
         </InfoArray>
     </CAbilResearch>
     <CAbilEffectTarget id="CalldownEnrichmentTower">

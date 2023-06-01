@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CValidatorCombine id="UEDValidatorIfElseStrikeFighter">
+        <CombineArray value="ValidateComandCentrUED"/>
+        <CombineArray value="ValidateUEDAirStructure"/>
+    </CValidatorCombine>
     <CValidatorLocationCompareRange id="UEDRadiusAttackPenemunde">
         <Compare value="LE"/>
         <Range value="13"/>
@@ -126,7 +130,7 @@
             <Compare value="GE"/>
             <Count value="1"/>
             <Radius value="3"/>
-            <Validator value="ValidateUEDAirStructure"/>
+            <Validator value="UEDValidatorIfElseStrikeFighter"/>
         </AreaArray>
         <SearchFilters value="Ground,Structure,Visible;Neutral,Enemy,RawResource,HarvestableResource,Missile,Stasis,UnderConstruction,Dead,Hidden"/>
         <ResultFailed value="Error,UEDErrorChangeGunFly"/>
